@@ -5,7 +5,16 @@ body {
 
 .navbar-logo {
     margin: 0px ;
-    width: 3em ;
+    width: 5em ;
     height: auto ;
+}
 
+nav.navbar {
+    background-color: #c10001 !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.btn-primary {
+    background-color: #c10001 !important;
 }
