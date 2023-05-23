@@ -132,10 +132,5 @@ footer {
   .login-link {
     text-align: center;
   }
-
-
-/* Ajouter une marge autour du texte */
-p, h1, h2, h3, input[type="text"], input[type="email"], input[type="password"],
-input[type="tel"], input[type="date"] {
-  margin: 30px;
-}
+  
+  
