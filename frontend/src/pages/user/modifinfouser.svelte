@@ -9,7 +9,13 @@
       <input class="inputpage" type="text" placeholder="Téléphone" required>
       <input class="inputpage" type="date" placeholder="Date de naissance" required>
       <input class="inputpage" type="text" placeholder="Site de formation" required>
-      <button class="btnpage" type="submit">Modifier</button>
+
+      <div class="bouton-user">
+        <a href=""><button class="btnpage" > Modifier</button></a>
+        
+        <button class="btnpage">Modifier mon mot de passe</button>
+      </div>
+      
     </form>
   </div>
   

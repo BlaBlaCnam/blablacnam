@@ -128,15 +128,45 @@ footer {
     text-align: center;
   }
 
-  .inputpage, .btnpage {
-  margin: 30px;
+  .inputpage {
+    margin: 30px;
     display: block;
     max-width: 50%;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
 
-p, h1, h2, h3 {
+ .btnpage{
+    display: block;
+    width: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+ .btnpage:hover {
+    background-color: #e04e3e;
+    color: #fff;
+  }
+
+  .bouton-user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btnpage {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  a{
+    text-decoration: none !important;
+  }
+
+p, h1, h2, h3, .bouton-user {
   margin: 30px;
 }
+
 
