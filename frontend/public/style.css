@@ -38,10 +38,13 @@ footer {
   .login-container {
     width: 300px;
     margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
   }
   
   .logo {
@@ -93,10 +96,13 @@ footer {
   .register-container {
     width: 300px;
     margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
   }
   
   .logo {
@@ -145,4 +151,5 @@ footer {
   .login-link {
     text-align: center;
   }
+  
   
