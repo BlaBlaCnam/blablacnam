@@ -1,5 +1,2 @@
-@ECHO OFF
-cd /nginx
-taskkill /f /IM nginx.exe
-start nginx
-EXIT
+taskkill /f /IM nginx.exe & .\nginx.exe
+PAUSE
