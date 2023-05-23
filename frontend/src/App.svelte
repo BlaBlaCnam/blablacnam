@@ -8,3 +8,4 @@
 <NavBar />
 <Router {routes} />
 <Footer />
+
