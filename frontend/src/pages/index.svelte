@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-4">
 
-            <div class="search-container">
+            <div class="search-container row">
 
                 <img src="/BLABLACNAM.png" alt="Logo" class="logo">
                 <h2 class="login-heading">Rechercher un trajet</h2>
@@ -26,8 +26,15 @@
 
         </div>
       <div class="col-8">
-        <h2>Trouver le covoiturage qui correspond à vos besoin</h2>
-          <p>Besoin d'un covoiturage pour se rendre dans un centre du CNAM? BLABLACNAM est là pour vous!</p>
+          <div class="row">
+              <h2>Trouver le covoiturage qui correspond à vos besoin</h2>
+              <p>Besoin d'un covoiturage pour se rendre dans un centre du CNAM? BLABLACNAM est là pour vous!</p>
+          </div>
+<div class="row justify-content-center mb-5 ">
+    <img class=" d-flex justify-content-center" src="public/BLABLACNAM2.png" alt="">
+
+</div>
+          
       </div>
 
       </div>
