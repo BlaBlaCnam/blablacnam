@@ -6,11 +6,7 @@
       align-items: center;
       height: 150vh;
     }
-  
-    /* Ajouter une marge autour du texte */
-    p, h1, h2 {
-      margin: 30px;
-    }
+
   </style>
   
   <h1>Conditions générales d'utilisation</h1> 
