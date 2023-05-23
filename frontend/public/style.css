@@ -84,8 +84,10 @@ footer {
   }
   
   button:hover {
-    background-color: #a07f45;
+    background-color: #e04e3e;
+    color: #fff;
   }
+  
   
   .register-link {
     text-align: center;
@@ -102,14 +104,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-  }
-  
-  .logo {
-    display: block;
-    margin: 0 auto;
-    max-width: 50%;
-    height: auto;
-    margin-bottom: 20px;
   }
   
   h2.register-heading {
@@ -133,21 +127,6 @@ footer {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #e33e2b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #e33e2b;
   }
   
   .login-link {
