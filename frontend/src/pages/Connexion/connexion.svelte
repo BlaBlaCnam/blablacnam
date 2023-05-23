@@ -1,5 +1,5 @@
 <div class="login-container">
-    <img src="/BLABLACNAM.png" alt="Logo" class="logo">
+    <img src="/BLABLA_2.png" alt="Logo" class="logo">
     <h2 class="login-heading">Connexion</h2>
     <form>
       <input type="text" placeholder="Nom d'utilisateur" required>
