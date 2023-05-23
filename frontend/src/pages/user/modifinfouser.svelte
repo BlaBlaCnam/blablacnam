@@ -11,8 +11,8 @@
       <input class="inputpage" type="text" placeholder="Site de formation" required>
 
       <div class="bouton-user">
-        <a href=""><button class="btnpage" > Modifier</button></a>
-        
+        <button class="btnpage" >Valider</button>
+
         <button class="btnpage">Modifier mon mot de passe</button>
       </div>
       
