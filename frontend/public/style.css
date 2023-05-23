@@ -169,4 +169,12 @@ p, h1, h2, h3, .bouton-user {
   margin: 30px;
 }
 
-
+.search-container {
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
