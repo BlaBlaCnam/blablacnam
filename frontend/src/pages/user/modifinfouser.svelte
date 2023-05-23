@@ -11,12 +11,14 @@
       <input class="inputpage" type="text" placeholder="Site de formation" required>
 
       <div class="bouton-user">
-        <button class="btnpage" >Valider</button>
-
-        <button class="btnpage">Modifier mon mot de passe</button>
+        <button class="btnpage" >Valider</button>      
       </div>
       
     </form>
+    <div class="bouton-user">
+      <button class="btnpage">Modifier mon mot de passe</button>
+    </div>
+    
   </div>
   
 
