@@ -132,5 +132,16 @@ footer {
   .login-link {
     text-align: center;
   }
-  
-  
+
+  .inputpage, .btnpage {
+  margin: 30px;
+    display: block;
+    max-width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+p, h1, h2 {
+  margin: 30px;
+}
+
