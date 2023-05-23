@@ -1,5 +1,5 @@
 <div class="register-container">
-    <img src="/BLABLA_2.png" alt="Logo" class="logo">
+    <img src="/BLABLACNAM.png" alt="Logo" class="logo">
     <h2 class="register-heading">Inscription</h2>
     <form>
       <input class="inputCenter" type="text" placeholder="ARA" required>
