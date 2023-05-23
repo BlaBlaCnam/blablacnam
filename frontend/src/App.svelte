@@ -1,8 +1,9 @@
 <script>
   import { Router, page } from "@roxi/routify";
   import { routes } from "../.routify/routes";
-  import NavBar from "./components/navbar.svelte"
-  import Footer from "./components/footer.svelte"
+  import NavBar from "./components/navbar.svelte";
+  import Footer from "./components/footer.svelte";
+  import Header from "./components/header.svelte";
   import { onMount } from 'svelte';
 
   let currentPage;
@@ -23,8 +24,9 @@ onMount(() => {
 
 {#if currentPage != "/Connexion/connexion" && currentPage != "/Connexion/inscription"}
   <NavBar />
+  
 {/if}
-
+<Header />
 <Router {routes} />
 
 {#if currentPage != "/Connexion/connexion" && currentPage != "/Connexion/inscription"}
