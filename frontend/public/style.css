@@ -1,13 +1,14 @@
 body {
     margin: 0px !important;
     padding: 0px !important;
+    background-image: url("public/vague.jpg");
     background-size: cover;
 }
 
 .navbar-logo {
-    margin: 0px;
-    width: 3.5em;
-    height: auto;
+    margin: 0px ;
+    width: 3.5em ;
+    height: auto ;
 }
 
 nav.navbar {
@@ -25,7 +26,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: relative;
+    position:relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -50,16 +51,6 @@ footer {
     text-align: center;
 }
 
-.admin-view-user-container {
-    max-width: 400px;
-    margin: 2% auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
-}
-
 .logo {
     display: block;
     margin: 0 auto;
@@ -79,7 +70,7 @@ form {
 
 input[type="text"],
 input[type="password"],
-input[type="date"] {
+input[type="date"]{
     display: block;
     width: 100%;
     padding: 10px;
@@ -92,9 +83,9 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #f4f4f4;
-    color: #333;
-    border: 1px solid #ccc;
+    background-color: #e04e3e;
+    color: #fff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -104,17 +95,13 @@ button:hover {
     color: #fff;
 }
 
+
 .register-link {
     text-align: center;
-<<<<<<< HEAD
 }
 
+
 .register-container {
-=======
-  }
-  
-  .register-container {
->>>>>>> dea86c89b1f59340ddcfb4d3467e734fe9f35176
     max-width: 400px;
     margin: 0 auto;
     margin-top: 2%;
@@ -156,7 +143,7 @@ form {
     border-radius: 5px;
 }
 
-.btnpage {
+.btnpage{
     display: block;
     width: auto;
     padding: 10px;
@@ -181,63 +168,47 @@ form {
     margin-right: 10px;
 }
 
-a {
+a{
     text-decoration: none !important;
 }
 
-p,
-h1,
-h2,
-h3,
-.bouton-user {
+p, h1, h2, h3, .bouton-user {
     margin: 30px;
 }
 
+.search-container {
+    /*max-width: 400px;*/
+    /*margin-bottom: 30px;*/
+    /*margin-top: 30px;*/
+    /*padding: 20px;*/
+    /*background-color: #fff;*/
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);*/
+    /*text-align: center;*/
+}
 
-/*.search-container {
-    max-width: 400px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}*/
-
-.img-accueil {
+.img-accueil{
     max-width: 80%;
 }
 
-<<<<<<< HEAD
-.band-admin {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(108, 221, 166);
-}
 
-=======
->>>>>>> dea86c89b1f59340ddcfb4d3467e734fe9f35176
 .password-container {
     max-width: 400px;
     margin: 10px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px  5px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-.center-page {
+.center-page{
     width: 500px;
     height: auto;
     margin: auto;
 }
-<<<<<<< HEAD
 
-.form-search {
+.form-search{
     margin-bottom: 5px;
     margin-top: 10px;
     padding: 10px;
@@ -246,5 +217,3 @@ h3,
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
-=======
->>>>>>> dea86c89b1f59340ddcfb4d3467e734fe9f35176
