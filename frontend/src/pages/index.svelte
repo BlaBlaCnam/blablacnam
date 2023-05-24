@@ -23,9 +23,6 @@
                     <input type="date" placeholder="Date" required>
                 </div>
                 <div class="col">
-                    <input type="number" placeholder="Nombre de place" required>
-                </div>
-                <div class="col">
                     <button type="submit">Rechercher</button>
 
                 </div>
@@ -40,16 +37,13 @@
         <form>
             <div class="row">
                 <div class="col">
-                    <input type="text" placeholder="Ville de départ" required>
+                    <input type="text" placeholder="CNAM de départ" required>
                 </div>
                 <div class="col">
-                    <input type="text" placeholder="CNAM d'arrivé" required>
+                    <input type="text" placeholder="Ville d'arrivée" required>
                 </div>
                 <div class="col">
                     <input type="date" placeholder="Date" required>
-                </div>
-                <div class="col">
-                    <input type="number" placeholder="Nombre de place" required>
                 </div>
                 <div class="col">
                     <button type="submit">Rechercher</button>
