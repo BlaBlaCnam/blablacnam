@@ -32,7 +32,7 @@
       </form>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="/Connexion/connexion">Connexion</a>
+          <a class="nav-link active" href="/identification/connexion">Identifiez-vous</a>
         </li>
       </ul>
     </div>

@@ -7,7 +7,7 @@
       <button type="submit">Se connecter</button>
     </form>
     <div class="register-link">
-      <p>Vous n'avez pas de compte ? <a href="/Connexion/inscription">S'inscrire</a></p>
+      <p>Vous n'avez pas de compte ? <a href="/identification/inscription">S'inscrire</a></p>
     </div>
   </div>
   
