@@ -22,7 +22,7 @@
     <div class="col-md-6">
       <div class="row">
         <h3>Gestion de mon profil</h3>
-        <div class="bouton-user center-page mb-5">
+        <div class="bouton-user">
           <div class="col-md-4">
             <a href="/user/modifinfouser"><button class="btnpage" > Modifier mon profil</button></a>
           </div>
@@ -35,7 +35,10 @@
         </div>
       </div>
       <div class="row">
-          <img class="img-accueil center-page mb-5" src="/voiturerouge.jpg" alt="">
+        <div>
+          <img class="img-accueil" src="/voiturerouge.jpg" alt="">
+
+        </div>
 
       </div>
 

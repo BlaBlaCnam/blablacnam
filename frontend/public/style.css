@@ -199,7 +199,9 @@ h3,
 }
 
 .img-accueil {
-    max-width: 80%;
+    max-width: 90%;
+    margin: 20px;
+    padding: 30px;
 }
 
 .password-container {
