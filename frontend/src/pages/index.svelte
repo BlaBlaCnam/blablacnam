@@ -14,11 +14,10 @@
                 <img src="/BLABLACNAM.png" alt="Logo" class="logo">
                 <h2 class="login-heading">Rechercher un trajet</h2>
                 <form>
-                    <input type="text" placeholder="Ville de départ" required>
-                    <input type="text" placeholder="Ville d'arrivée" required>
-                    <input type="date" placeholder="Date" required>
-                    <input type="number" placeholder="Nombre de place" required>
-
+                    <input  type="text" placeholder="Ville de départ" required>
+                    <input  type="text" placeholder="Ville d'arrivée" required>
+                    <input  type="date" placeholder="Date" required>
+                    <input  type="number" placeholder="Nombre de place" required>
 
                     <button type="submit">Rechercher</button>
                 </form>

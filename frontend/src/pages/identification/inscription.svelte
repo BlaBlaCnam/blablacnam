@@ -27,7 +27,7 @@
       <button type="submit">S'inscrire</button>
     </form>
     <div class="login-link">
-      <p>Déjà membre ? <a href="/Connexion/connexion">Se connecter</a></p>
+      <p>Déjà membre ? <a href="/identification/connexion">Se connecter</a></p>
     </div>
   </div>
   
