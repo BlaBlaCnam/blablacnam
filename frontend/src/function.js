@@ -7,6 +7,34 @@ user.subscribe((e) => {
     userValue = e;
 })
 
+export function setCookie(cname, cvalue, cminutes = 24) {
+    const d = new Date();
+    d.setTime(d.getTime() + (cminutes*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+window['setCookie'] = setCookie;
+
+export function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+}
+
+window['getCookie'] = getCookie;
+
+
 export async function api_fetch(url, data = new FormData())
 {
     if (userValue.is_logged_in)

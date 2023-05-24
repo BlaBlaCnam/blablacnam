@@ -19,6 +19,7 @@ session_start();
 
 $user["PHPSESSID"] = session_id();
 
+$_SESSION["is_logged_in"] = true;
 $_SESSION["user"] = $user;
 
 echo json_encode($user);
