@@ -26,11 +26,7 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex mx-auto">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-secondary" type="submit">Search</button>
-      </form>
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link active" href="/Connexion/connexion">Connexion</a>
         </li>
