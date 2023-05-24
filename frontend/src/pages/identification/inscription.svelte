@@ -2,7 +2,7 @@
     <img src="/BLABLACNAM.png" alt="Logo" class="logo">
     <h2 class="register-heading">Inscription</h2>
     <form>
-      <input class="inputCenter" type="text" placeholder="ARA" required>
+      <input class="inputCenter" type="text" placeholder="Numéro ARA" required>
       <input class="inputCenter" type="email" placeholder="Adresse e-mail" required>
       <input class="inputCenter" type="tel" placeholder="Numéro de téléphone" required>
       <input class="inputCenter" type="date" placeholder="Date de naissance">
