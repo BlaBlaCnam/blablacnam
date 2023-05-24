@@ -4,12 +4,12 @@
     metatags.title = 'My Routify app'
     metatags.description = 'Description coming soon...'
 </script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <main class="container">
-    <div class="row">
-        <div class="col-4">
+    <div class="row ">
+        <div class="col-md-4">
 
-            <div class="search-container row">
+            <div class="search-container row justify-content-center d-flex flex-wrap">
 
                 <img src="/BLABLACNAM.png" alt="Logo" class="logo">
                 <h2 class="login-heading">Rechercher un trajet</h2>
@@ -24,17 +24,20 @@
             </div>
 
         </div>
-      <div class="col-8">
-          <div class="row">
+      <div class="col-md-8">
+          <div class="justify-content-center row">
               <h2>Trouver le covoiturage qui correspond à vos besoin</h2>
               <p>Besoin d'un covoiturage pour se rendre dans un centre du CNAM? BLABLACNAM est là pour vous!</p>
+              <h2></h2>
           </div>
-<div class="row justify-content-center mb-5 ">
-    <img class=" d-flex justify-content-center" src="public/BLABLACNAM2.png" alt="">
+    <div class="row justify-content-center">
+        <img class="img-accueil " src="public/covoit.jpg" alt="">
 
-</div>
-          
-      </div>
+    </div>
 
       </div>
+
+      </div>
+
+
 </main>

@@ -7,7 +7,7 @@
 
   let currentPage;
 
-onMount(() => { 
+onMount(() => {
   // Subscribe to changes in the $page store
   const unsubscribe = page.subscribe(($page) => {
     currentPage = $page.path;
@@ -16,12 +16,11 @@ onMount(() => {
   // Clean up the subscription when the component is destroyed
   return unsubscribe;
 });
-
 </script>
 
 
 
-{#if currentPage != "/identification/connexion" && currentPage != "/identification/inscription"}
+{#if currentPage != "/Connexion/connexion" && currentPage != "/Connexion/inscription"}
   <NavBar />
 {/if}
 
