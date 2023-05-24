@@ -1,12 +1,11 @@
 <style>
     /* Centrer le contenu */
-    body {
+    /*body {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 150vh;
-    }
-
+    }*/
   </style>
   
   <h1>Conditions générales d'utilisation</h1> 
