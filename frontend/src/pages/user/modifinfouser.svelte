@@ -16,7 +16,7 @@
       
     </form>
     <div class="bouton-user">
-      <button class="btnpage">Modifier mon mot de passe</button>
+      <a href="/identification/modifpassword"><button class="btnpage">Modifier mot de passe</button></a>
     </div>
     
   </div>

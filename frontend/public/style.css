@@ -26,6 +26,10 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    position:relative;
+      left: 0;
+      bottom: 0;
+      width: 100%;
   }
   
   .footer-content p {
@@ -187,9 +191,26 @@ p, h1, h2, h3, .bouton-user {
     max-width: 80%;
 }
 
+<<<<<<< Updated upstream
 #footer {
   position:absolute;
   bottom:0;  /* on le colle en bas */
   width:100%;
   height:100px;   /* Hauteur du pied de page */
+=======
+.password-container {
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px  5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.center-page{
+    width: 500px;
+    height: auto;
+    margin: auto;
+>>>>>>> Stashed changes
 }
