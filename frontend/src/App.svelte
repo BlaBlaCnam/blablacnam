@@ -1,9 +1,8 @@
 <script>
   import { Router, page } from "@roxi/routify";
   import { routes } from "../.routify/routes";
-  import NavBar from "./components/navbar.svelte";
+  import NavBar from "./components/navbars/navbar_admin.svelte";
   import Footer from "./components/footer.svelte";
-  import Header from "./components/header.svelte";
   import { onMount } from 'svelte';
 
   let currentPage;
@@ -13,7 +12,7 @@ onMount(() => {
   const unsubscribe = page.subscribe(($page) => {
     currentPage = $page.path;
   });
-
+ 
   // Clean up the subscription when the component is destroyed
   return unsubscribe;
 });
@@ -24,9 +23,8 @@ onMount(() => {
 
 {#if currentPage != "/Connexion/connexion" && currentPage != "/Connexion/inscription"}
   <NavBar />
-  
 {/if}
-<Header />
+
 <Router {routes} />
 
 {#if currentPage != "/Connexion/connexion" && currentPage != "/Connexion/inscription"}
