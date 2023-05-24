@@ -12,7 +12,7 @@
 
         <div class="row">
             <div class="col-md">
-                <div class="bouton-user">
+                <div class="bouton-modifpassword">
                     <button class="btnpage" type="submit">Valider</button>     
                   <a href="/identification/modifpassword">
                     <button class="btnpage">Modifier mot de passe</button>
@@ -24,7 +24,6 @@
     </form>
 </div>
   
-
 
 
 

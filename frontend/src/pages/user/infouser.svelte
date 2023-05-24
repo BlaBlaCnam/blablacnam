@@ -18,20 +18,23 @@
       </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="row">
-        <h3>Gestion de mon profil</h3>
-        <div class="bouton-user">
-          <div class="col-md-4">
-            <a href="/user/modifinfouser"><button class="btnpage" > Modifier mon profil</button></a>
-          </div>
-          <div class="col-md-4">
-            <a href="/trajet/mesTrajets"><button class="btnpage">Voir mes trajets</button></a>
-          </div>
-          <div class="col-md-4">
-            <button class="btnpage">Supprimer le compte</button>
+        <div class="gestion-container">
+          <h3 style="text-align: center;">Gestion de mon profil</h3>
+          <div class="bouton-user">
+            <div class="col-md-4">
+              <a href="/user/modifinfouser"><button class="btnpage" > Modifier mon profil</button></a>
+            </div>
+            <div class="col-md-4">
+              <a href="/trajet/mesTrajets"><button class="btnpage">Voir mes trajets</button></a>
+            </div>
+            <div class="col-md-4">
+              <button class="btnpage">Supprimer le compte</button>
+            </div>
           </div>
         </div>
+        
       </div>
       <div class="row">
         <div>

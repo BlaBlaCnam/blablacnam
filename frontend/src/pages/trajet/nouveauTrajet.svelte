@@ -41,6 +41,14 @@
         <input id="heure-input" class="inputCenter" type="date" placeholder="Heure">
       </div>
 
+      <div class="label-input">
+        <label for="retour">Retour :</label>
+            <input type="radio" id="oui" name="retour" value="oui">
+        <label for="oui">Oui</label>
+            <input type="radio" id="non" name="retour" value="non">
+        <label for="non">Non</label>
+      </div>
+
       <button class="btnpage" type="submit">Enregistrer</button>
     </form>
   </div>
