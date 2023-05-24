@@ -10,7 +10,7 @@
 
   import Footer from "./components/footer.svelte";
 
-
+  import {getCookie, setCookie} from "./function"
 </script>
 
 {#if $user.is_logged_in && $user.data.administrateur}
