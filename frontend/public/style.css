@@ -6,9 +6,9 @@ body {
 }
 
 .navbar-logo {
-    margin: 0px ;
-    width: 3.5em ;
-    height: auto ;
+    margin: 0px;
+    width: 3.5em;
+    height: auto;
 }
 
 nav.navbar {
@@ -26,22 +26,22 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position:relative;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-  }
-  
-  .footer-content p {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
     margin: 0;
     font-size: 14px;
-  }
-  
-  .footer-content span {
+}
+
+.footer-content span {
     font-weight: bold;
-  }
-  
-  .login-container {
+}
+
+.login-container {
     max-width: 400px;
     margin: 2% auto;
     padding: 20px;
@@ -49,37 +49,47 @@ footer {
     border-radius: 10px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-  }
-  
-  .logo {
+}
+
+.admin-view-user-container {
+    max-width: 400px;
+    margin: 2% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.logo {
     display: block;
     margin: 0 auto;
     max-width: 50%;
     height: auto;
     margin-bottom: 20px;
-  }
-  
-  h2.login-heading {
+}
+
+h2.login-heading {
     text-align: center;
     /* Vos styles spécifiques pour l'h2 de la section de connexion */
-  }
-  
-  form {
+}
+
+form {
     margin-bottom: 20px;
-  }
-  
-  input[type="text"],
-  input[type="password"],
-  input[type="date"]{
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
     display: block;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  button {
+}
+
+button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -88,20 +98,18 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #e04e3e;
     color: #fff;
-  }
-  
-  
-  .register-link {
+}
+
+.register-link {
     text-align: center;
-  }
-  
-  
-  .register-container {
+}
+
+.register-container {
     max-width: 400px;
     margin: 0 auto;
     margin-top: 2%;
@@ -111,86 +119,98 @@ footer {
     border-radius: 10px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-  }
-  
-  h2.register-heading {
+}
+
+h2.register-heading {
     text-align: center;
     /* Vos styles spécifiques pour l'h2 de la section d'inscription */
-  }
-  
-  form {
+}
+
+form {
     margin-bottom: 20px;
-  }
-  
-  .inputCenter {
+}
+
+.inputCenter {
     display: block;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  .login-link {
-    text-align: center;
-  }
+}
 
-  .inputpage {
+.login-link {
+    text-align: center;
+}
+
+.inputpage {
     margin: 30px;
     display: block;
     max-width: 50%;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
+}
 
- .btnpage{
+.btnpage {
     display: block;
     width: auto;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
+}
 
- .btnpage:hover {
+.btnpage:hover {
     background-color: #e04e3e;
     color: #fff;
-  }
+}
 
-  .bouton-user {
+.bouton-user {
     display: flex;
     align-items: center;
-  }
-  
-  .btnpage {
+}
+
+.btnpage {
     padding: 5px 10px;
     font-size: 14px;
     margin-right: 10px;
-  }
-  
-  a{
+}
+
+a {
     text-decoration: none !important;
-  }
-
-p, h1, h2, h3, .bouton-user {
-  margin: 30px;
 }
 
-.search-container {
-    /*max-width: 400px;*/
-    /*margin-bottom: 30px;*/
-    /*margin-top: 30px;*/
-    /*padding: 20px;*/
-    /*background-color: #fff;*/
-    /*border-radius: 10px;*/
-    /*box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);*/
-    /*text-align: center;*/
+p,
+h1,
+h2,
+h3,
+.bouton-user {
+    margin: 30px;
 }
 
-.img-accueil{
+
+/*.search-container {
+    max-width: 400px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}*/
+
+.img-accueil {
     max-width: 80%;
 }
 
+.band-admin {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(108, 221, 166);
+}
 
 .password-container {
     max-width: 400px;
@@ -198,17 +218,17 @@ p, h1, h2, h3, .bouton-user {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px  5px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-.center-page{
+.center-page {
     width: 500px;
     height: auto;
     margin: auto;
 }
 
-.form-search{
+.form-search {
     margin-bottom: 5px;
     margin-top: 10px;
     padding: 10px;

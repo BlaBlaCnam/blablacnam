@@ -24,15 +24,16 @@
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="dropdown-toggle" href="#">[insert name]</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Déconnexion</a></li>
-              </ul>
-            
+          <li class="nav-item band-admin">
+            <a class="nav-link active" href="#">administrateur</a>
+          </li>
+          <li class="nav-item dropdown band-admin">
+            <a class="dropdown-toggle nav-link active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">insert name</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-  
+</nav>
