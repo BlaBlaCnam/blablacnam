@@ -4,7 +4,7 @@
 
   import { user } from "./stores/user";
 
-  import NavBarConnexion from "./components/navbars/navbar_connexion.svelte";
+  import NavBarConnexion from "./components/navbars/navbar_user.svelte";
   import NavBarUser from "./components/navbars/navbar_user.svelte";
   import NavBarAdmin from "./components/navbars/navbar_admin.svelte";
 

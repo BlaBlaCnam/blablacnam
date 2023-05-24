@@ -255,3 +255,20 @@ h3,
       padding: 10px;
       border-color: #c10001;
     }
+
+    .btnNewTrajet {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #f4f4f4;
+      color: #333;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .btnNewTrajet:hover {
+      background-color: #27c624;
+      color: #fff;
+    }
+

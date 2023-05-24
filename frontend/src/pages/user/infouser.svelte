@@ -23,12 +23,9 @@
     </div>
 
     <div class="col-6">
-      <h2>Mes trajets</h2>
+    
     </div>
-
-
   </div>
-
   </div>
 
 
