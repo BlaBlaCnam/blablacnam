@@ -19,6 +19,9 @@ function hash_pw($pw)
     return (sha1($pw . $salt));
 }
 
+session_id($_POST["PHPSESSID"]);
+session_start();
+
 header("Content-Type: text/html; charset=utf-8");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Credentials: true");

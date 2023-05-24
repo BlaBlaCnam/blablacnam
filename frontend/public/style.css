@@ -24,7 +24,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: relative;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -231,30 +231,79 @@ h3,
 .systeme-recherche {
     width: 40% !important;
     margin: auto;
-  }
+}
   
   .recherche-user {
     width: 100% !important;
     margin: auto;
-  }
+}
   
   .bouton-recherche {
     width: 100px;
     margin-left: auto;
     border-radius: 5px;
-  }
+}
   
-  .table-utilisateur {
-    margin: auto;
-  }
-  
-  .tr-utilisateur th {
-      text-align: center;
-      background-color: #927f7f;
-      color: #0e0c0c;
-      padding: 10px;
-      border-color: #c10001;
-    }
+table {
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table thead {
+    color: #ffffff;
+    background-color: #c10001;
+}
+
+table tbody {
+    background-color: #FFFFFF;
+}
+
+th,
+td {
+padding: 8px;
+border-bottom: 1px solid #000000;
+}
+
+tr {
+transition: 0.2s linear;
+}
+
+table tbody tr:hover {
+color: #FFFFFF;
+transition: 0.5s linear;
+background-color: #c10001;
+}
+
+table tbody tr:hover input[type=checkbox] {
+transition: 0.5s linear;
+accent-color: #FFFFFF;
+}
+
+table input[type=checkbox] {
+accent-color: #c10001;
+transition: 0.2s linear;
+}
+
+table tbody tr:hover a {
+color: #FFFFFF;
+transition: 0.5s linear;
+}
+
+table a {
+color: #000;
+transition: 0.2s linear;
+text-decoration: none;
+}
+
+table tbody tr:hover a:hover {
+color: #000;
+transition: 0.5s linear;
+}
 
     .btnNewTrajet {
       display: block;
