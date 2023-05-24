@@ -6,10 +6,15 @@
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <main class="container">
-
-
+    <div class="row">
+        <div class="justify-content-center row">
+            <h2>Trouver le covoiturage qui correspond à vos besoin</h2>
+            <p>Besoin d'un covoiturage pour se rendre dans un centre du CNAM? BLABLACNAM est là pour vous!</p>
+            <h2></h2>
+        </div>
+    </div>
     <div class="row form-search">
-        <h2 class="">Rechercher un trajet - Ville -> CNAM</h2>
+        <h3 class="">Rechercher un trajet - Ville -> CNAM</h3>
 
         <form>
             <div class="row">
@@ -33,7 +38,7 @@
     </div>
 
     <div class="row form-search">
-        <h2 class="">Rechercher un trajet - CNAM -> Ville</h2>
+        <h3 class="">Rechercher un trajet - CNAM -> Ville</h3>
         <form>
             <div class="row">
                 <div class="col">
@@ -57,18 +62,7 @@
 
 
 
-    <div class="row">
-        <div class="justify-content-center row">
-            <h2>Trouver le covoiturage qui correspond à vos besoin</h2>
-            <p>Besoin d'un covoiturage pour se rendre dans un centre du CNAM? BLABLACNAM est là pour vous!</p>
-            <h2></h2>
-        </div>
-        <div class="row justify-content-center">
-            <img class="img-accueil " src="public/covoit.jpg" alt="">
 
-        </div>
-
-    </div>
 
 
 
