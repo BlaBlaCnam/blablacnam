@@ -1,9 +1,25 @@
+<script>
+  import {api_submit} from "./../../function";
+  import {api} from "../../config";
+  import {user} from "../../stores/user";
+
+  user.subscribe((e) => {
+    console.log("NEW USR!!", e);
+  })
+</script>
+
 <div class="login-container">
     <img src="/BLABLACNAM.png" alt="Logo" class="logo">
     <h2 class="login-heading">Connexion</h2>
-    <form>
-      <input type="text" placeholder="Nom d'utilisateur" required>
-      <input type="password" placeholder="Mot de passe" required>
+    <form action="{api}/login.php" on:submit={api_submit(async (data) => {
+
+        await user.set({is_logged_in: true, data: data});
+        alert ("Login success for " + data.prenom);
+        window.history.replaceState({}, '', '/');
+
+      })}>
+      <input name="user" type="text" placeholder="Nom d'utilisateur" required>
+      <input name="pw" type="password" placeholder="Mot de passe" required>
       <button type="submit">Se connecter</button>
     </form>
     <div class="register-link">

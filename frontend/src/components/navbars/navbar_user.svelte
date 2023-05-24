@@ -1,3 +1,7 @@
+<script>
+  
+</script>
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
   <div class="container-fluid">
     <a class="navbar-brand" href="/"><img src="/BLABLACNAM.png" class="navbar-logo" /></a>
