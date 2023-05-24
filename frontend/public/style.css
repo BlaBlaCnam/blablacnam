@@ -6,9 +6,9 @@ body {
 }
 
 .navbar-logo {
-    margin: 0px ;
-    width: 3.5em ;
-    height: auto ;
+    margin: 0px;
+    width: 3.5em;
+    height: auto;
 }
 
 nav.navbar {
@@ -26,7 +26,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position:relative;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -51,6 +51,16 @@ footer {
     text-align: center;
 }
 
+.admin-view-user-container {
+    max-width: 400px;
+    margin: 2% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
 .logo {
     display: block;
     margin: 0 auto;
@@ -70,7 +80,7 @@ form {
 
 input[type="text"],
 input[type="password"],
-input[type="date"]{
+input[type="date"] {
     display: block;
     width: 100%;
     padding: 10px;
@@ -80,26 +90,24 @@ input[type="date"]{
 }
 
 button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #f4f4f4;
-  color: #333;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #e04e3e;
-  color: #fff;
+    background-color: #e04e3e;
+    color: #fff;
 }
-
 
 .register-link {
     text-align: center;
 }
-
 
 .register-container {
     max-width: 400px;
@@ -143,7 +151,7 @@ form {
     border-radius: 5px;
 }
 
-.btnpage{
+.btnpage {
     display: block;
     width: auto;
     padding: 10px;
@@ -168,11 +176,15 @@ form {
     margin-right: 10px;
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
-p, h1, h2, h3, .bouton-user {
+p,
+h1,
+h2,
+h3,
+.bouton-user {
     margin: 30px;
 }
 
@@ -187,10 +199,9 @@ p, h1, h2, h3, .bouton-user {
     /*text-align: center;*/
 }
 
-.img-accueil{
+.img-accueil {
     max-width: 80%;
 }
-
 
 .password-container {
     max-width: 400px;
@@ -198,17 +209,17 @@ p, h1, h2, h3, .bouton-user {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px  5px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-.center-page{
+.center-page {
     width: 500px;
     height: auto;
     margin: auto;
 }
 
-.form-search{
+.form-search {
     margin-bottom: 5px;
     margin-top: 10px;
     padding: 10px;
@@ -221,28 +232,28 @@ p, h1, h2, h3, .bouton-user {
 .systeme-recherche {
     width: 40% !important;
     margin: auto;
-  }
-  
-  .recherche-user {
+}
+
+.recherche-user {
     width: 100% !important;
     margin: auto;
-  }
-  
-  .bouton-recherche {
+}
+
+.bouton-recherche {
     width: 100px;
     margin-left: auto;
     border-radius: 5px;
-  }
-  
-  .table-utilisateur {
+}
+
+.table-utilisateur {
     margin: auto;
-  }
-  
-  .tr-utilisateur th {
-      text-align: center;
-      background-color: #927f7f;
-      color: #0e0c0c;
-      padding: 10px;
-      border-radius: 4px;
-      border-color: #c10001;
-    }
+}
+
+.tr-utilisateur th {
+    text-align: center;
+    background-color: #927f7f;
+    color: #0e0c0c;
+    padding: 10px;
+    border-radius: 4px;
+    border-color: #c10001;
+}
