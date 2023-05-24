@@ -1,32 +1,25 @@
 <script>
-  import { Router, page } from "@roxi/routify";
+  import { Router } from "@roxi/routify";
   import { routes } from "../.routify/routes";
-  import NavBar from "./components/navbars/navbar_connexion.svelte";
+
+  import { user } from "./stores/user";
+
+  import NavBarConnexion from "./components/navbars/navbar_connexion.svelte";
+  import NavBarUser from "./components/navbars/navbar_user.svelte";
+  import NavBarAdmin from "./components/navbars/navbar_admin.svelte";
+
   import Footer from "./components/footer.svelte";
-  import { onMount } from 'svelte';
 
-  let currentPage;
 
-onMount(() => {
-  // Subscribe to changes in the $page store
-  const unsubscribe = page.subscribe(($page) => {
-    currentPage = $page.path;
-  });
- 
-  // Clean up the subscription when the component is destroyed
-  return unsubscribe;
-});
 </script>
 
-
-
-{#if currentPage != "/Connexion/connexion" && currentPage != "/Connexion/inscription"}
-  <NavBar />
+{#if $user.is_logged_in && $user.data.administrateur}
+  <NavBarAdmin />
+{:else if $user.is_logged_in}
+  <NavBarUser />
+{:else}
+  <NavBarConnexion />
 {/if}
 
 <Router {routes} />
-
-{#if currentPage != "/identification/connexion" && currentPage != "/identification/inscription"}
-  <Footer />
-{/if}
-
+<Footer />

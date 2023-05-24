@@ -55,3 +55,82 @@ Stack trace:
 2023/05/23 10:51:52 [emerg] 11872#16376: CreateDirectory() "C:\Users\tardy\Documents\Documents\COURS\CNAM\PROJET BLABLACNAM\blablacnam\backend\nginx/temp/client_body_temp" failed (3: The system cannot find the path specified)
 2023/05/23 10:52:04 [emerg] 17380#19152: CreateDirectory() "C:\Users\tardy\Documents\Documents\COURS\CNAM\PROJET BLABLACNAM\blablacnam\backend\nginx/temp/client_body_temp" failed (3: The system cannot find the path specified)
 2023/05/23 11:19:32 [error] 34260#20688: *2 CreateFile() "C:\Users\tbali\Desktop\CnamPHP\blablacnam\backend\nginx/html/favicon.ico" failed (2: Le fichier sp�cifi� est introuvable), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2023/05/24 14:08:08 [error] 8620#11788: *1 CreateFile() "C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2023/05/24 14:08:33 [error] 10812#12684: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Syntaxe incorrecte vers '0627037228'. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:8
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 14:09:07 [error] 10812#12684: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Le nom ou le numéro de colonne des valeurs fournies ne correspond pas à la définition de la table. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:8
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 14:09:32 [error] 10812#12684: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Le nom ou le numéro de colonne des valeurs fournies ne correspond pas à la définition de la table. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:8
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 14:09:33 [error] 10812#12684: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Le nom ou le numéro de colonne des valeurs fournies ne correspond pas à la définition de la table. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:8
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 14:09:33 [error] 10812#12684: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Le nom ou le numéro de colonne des valeurs fournies ne correspond pas à la définition de la table. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:8
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 14:09:33 [error] 10812#12684: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Le nom ou le numéro de colonne des valeurs fournies ne correspond pas à la définition de la table. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:8
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 14:10:16 [error] 10812#12684: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom de colonne non valide : 'is_section'. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:8
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 14:10:25 [error] 10812#12684: *11 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Il y a moins de colonnes dans l'instruction INSERT que de valeurs spécifiées dans la clause VALUES. Le nombre de valeurs de la clause VALUES doit être le même que le nombre de colonnes de l'instruction INSERT. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:8
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 14:10:54 [error] 10812#12684: *11 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Impossible d'insérer la valeur NULL dans la colonne 'id_utilisateur', table 'BLABLACNAM.dbo.UTILISATEUR'. Cette colonne n'accepte pas les valeurs NULL. Échec de INSERT. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:9
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 15:00:14 [error] 10812#12684: *16 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom de colonne non valide : 'id_adresse'. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:9
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 15:00:14 [error] 10812#12684: *16 CreateFile() "C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/register.php"
+2023/05/24 15:08:49 [error] 10812#12684: *22 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom de colonne non valide : 'id_adresse'. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:9
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 15:08:49 [error] 10812#12684: *22 CreateFile() "C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/register.php"
+2023/05/24 15:08:50 [error] 10812#12684: *24 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom de colonne non valide : 'id_adresse'. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:9
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 15:08:50 [error] 10812#12684: *24 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom de colonne non valide : 'id_adresse'. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:9
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 15:08:52 [error] 10812#12684: *24 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom de colonne non valide : 'id_adresse'. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:9
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/24 15:34:56 [error] 10812#12684: *60 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom de colonne non valide : 'mot_de_pase'. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\login.php:9
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\login.php(9): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\login.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "POST /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1", referrer: "http://localhost:5000/"
+2023/05/24 16:01:07 [error] 10812#12684: *98 CreateFile() "C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/hi.php"

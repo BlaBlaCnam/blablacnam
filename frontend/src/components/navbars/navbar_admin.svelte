@@ -1,3 +1,8 @@
+<script>
+  import {user} from "../../stores/user"
+
+</script>
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
     <div class="container-fluid">
       <a class="navbar-brand" href="/"><img src="/BLABLACNAM.png" class="navbar-logo" /></a>
@@ -28,7 +33,7 @@
             <a class="nav-link active" href="#">administrateur</a>
           </li>
           <li class="nav-item dropdown band-admin">
-            <a class="dropdown-toggle nav-link active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">insert name</a>
+            <a class="dropdown-toggle nav-link active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{$user.data.prenom}</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Déconnexion</a></li>
             </ul>
