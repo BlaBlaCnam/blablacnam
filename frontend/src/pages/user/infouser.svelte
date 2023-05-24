@@ -30,7 +30,7 @@
             <button class="btnpage">Supprimer le compte</button>
           </div>
           <div class="col-md-4">
-            <button class="btnpage">Voir mes trajets</button>
+            <a href="/trajet/mesTrajets"><button class="btnpage">Voir mes trajets</button></a>
           </div>
         </div>
       </div>
