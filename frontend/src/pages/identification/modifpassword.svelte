@@ -1,4 +1,3 @@
-
 <div class="center-page">
     <div class="password-container">
         <h2 class="register-heading">Modifier le mot de passe</h2>
