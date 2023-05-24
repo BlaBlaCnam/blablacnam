@@ -191,13 +191,7 @@ p, h1, h2, h3, .bouton-user {
     max-width: 80%;
 }
 
-<<<<<<< Updated upstream
-#footer {
-  position:absolute;
-  bottom:0;  /* on le colle en bas */
-  width:100%;
-  height:100px;   /* Hauteur du pied de page */
-=======
+
 .password-container {
     max-width: 400px;
     margin: 10px;
@@ -212,5 +206,4 @@ p, h1, h2, h3, .bouton-user {
     width: 500px;
     height: auto;
     margin: auto;
->>>>>>> Stashed changes
 }
