@@ -17,7 +17,7 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="/Connexion/connexion">Déconnexion</a>
+          <a class="nav-link active" href="#">Déconnexion</a>
         </li>
       </ul>
     </div>

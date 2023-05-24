@@ -24,8 +24,12 @@
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="/Connexion/connexion">Connexion</a>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle" href="#">[insert name]</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+              </ul>
+            
           </li>
         </ul>
       </div>

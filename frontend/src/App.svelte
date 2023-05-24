@@ -1,13 +1,13 @@
 <script>
   import { Router, page } from "@roxi/routify";
   import { routes } from "../.routify/routes";
-  import NavBar from "./components/navbars/navbar_admin.svelte";
+  import NavBar from "./components/navbars/navbar_connexion.svelte";
   import Footer from "./components/footer.svelte";
   import { onMount } from 'svelte';
 
   let currentPage;
 
-onMount(() => {
+onMount(() => { 
   // Subscribe to changes in the $page store
   const unsubscribe = page.subscribe(($page) => {
     currentPage = $page.path;
@@ -21,13 +21,13 @@ onMount(() => {
 
 
 
-{#if currentPage != "/Connexion/connexion" && currentPage != "/Connexion/inscription"}
+{#if currentPage != "/identification/connexion" && currentPage != "/identification/inscription"}
   <NavBar />
 {/if}
 
 <Router {routes} />
 
-{#if currentPage != "/Connexion/connexion" && currentPage != "/Connexion/inscription"}
+{#if currentPage != "/identification/connexion" && currentPage != "/identification/inscription"}
   <Footer />
 {/if}
 
