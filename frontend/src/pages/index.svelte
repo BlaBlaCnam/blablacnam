@@ -34,10 +34,5 @@
         <img class="img-accueil " src="public/covoit.jpg" alt="">
 
     </div>
-
-      </div>
-
-      </div>
-
-
+        
 </main>

@@ -17,7 +17,6 @@
         <a href="/user/modifinfouser"><button class="btnpage" > Modifier mes données</button></a>
         <button class="btnpage">Supprimer le compte</button>   
       </div>
-      
   </div>
 
 
