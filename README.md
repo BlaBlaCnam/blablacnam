@@ -17,4 +17,6 @@ cd frontend
 npm install
 npm run dev
 
-# compiler le front et le mettre sur nginx : todo : faire le bat
+# compiler le front et le mettre sur nginx :
+npm run build 
+copier le dossier dist dans le dossier html de nginx
