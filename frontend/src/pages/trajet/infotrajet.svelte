@@ -25,7 +25,7 @@
 
         <form>
             <label>Mon message:</label>
-            <input class="inputCenter" type="text" placeholder="Entrer votre message" required>
+            <input class="inputCenter" name="contenu" type="text" placeholder="Entrer votre message" required>
             <div class="row">
                 <div class="col-md">
                     <div class="bouton-modifpassword">
