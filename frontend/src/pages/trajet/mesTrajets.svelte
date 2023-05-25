@@ -1,4 +1,4 @@
-<div class="login-container">
+<div class="newtrajet-container">
     <a href="/user/infouser">
         <button class="btnpage" type="submit">Retour</button>
       </a>
@@ -11,6 +11,8 @@
           <th>Date</th>
           <th>Lieu de départ</th>
           <th>Lieu d'arrivée</th>
+          <th>Details</th>
+          <th>Supprimer</th>
         </tr>
       </thead>
       <tbody>
@@ -19,11 +21,15 @@
           <td>01/05/2023</td>
           <td>Paris</td>
           <td>Lyon</td>
+          <td><p><img src="/eye.png"></p></td>
+          <td><p><img src="/bin.png"></p></td>
         </tr>
         <tr>
           <td>05/05/2023</td>
           <td>Lyon</td>
           <td>Marseille</td>
+          <td><p><img src="/eye.png"></p></td>
+          <td><p><img src="/bin.png"></p></td>
         </tr>
      
       </tbody>

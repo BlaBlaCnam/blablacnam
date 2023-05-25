@@ -362,7 +362,7 @@ table tbody tr:hover a:hover {
 }
 
 .newtrajet-container {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -433,9 +433,7 @@ table img {
     height: 25px;
 }
 
-table p {
+table, p{
     text-align: center;
-}
-
-
+    margin: auto;
 }

@@ -20,30 +20,30 @@
                     <td>Smith</td>
                     <td>John</td>
                     <td>john.smith@example.com</td>
-                    <td><img src="/eye.png"></td>
+                    <td><p><img src="/eye.png"></p></td>
                     <td><p><img src="/bin.png"></p></td>
                 </tr>
                 <tr>
                     <td>Doe</td>
                     <td>Jane</td>
                     <td>jane.doe@example.com</td>
-                    <td><img src="/eye.png"></td>
+                    <td><p><img src="/eye.png"></p></td>
                     <td><p><img src="/bin.png"></p></td>
                 </tr>
                 <tr>
                     <td>Thomas</td>
                     <td>Nathan</td>
                     <td>NathanThomasAnalDestroyers@example.com</td>
-                    <td><img src="/eye.png"></td>
+                    <td><p><img src="/eye.png"></p></td>
                     <td><p><img src="/bin.png"></p></td>
                 </tr>
                 <tr>
                     <td>caca</td>
                     <td>Nathan</td>
                     <td>NathanThomasAnalDestroyer@example.com</td>
-                    <td><img src="/eye.png"></td>
+                    <td><p><img src="/eye.png"></p></td>
                     <td><p><img src="/bin.png"></p></td>
                 </tr>
             </tbody>
         </table>
-</div>
+</div> 
