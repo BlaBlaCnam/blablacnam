@@ -32,7 +32,6 @@ onMount(async () => {
             <th>Contenu</th>
             <th>Date du message</th>
             <th>Voir</th>
-            <th>Supprimer</th>
         </tr>
         </thead>
         <tbody>
@@ -43,7 +42,6 @@ onMount(async () => {
                 <td>{message.contenu}</td>
                 <td>{message.date_message}</td>
                 <td><p><img src="/eye.png"></p></td>
-                <td><p><img src="/bin.png"></p></td>
             </tr>
         {/each}
 
