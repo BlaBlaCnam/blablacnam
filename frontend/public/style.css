@@ -257,6 +257,7 @@ table {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 20px !important;
 }
 
 table thead {
@@ -310,6 +311,7 @@ color: #000;
 transition: 0.5s linear;
 }
 
+<<<<<<< Updated upstream
     .btnNewTrajet {
       display: block;
       width: 100%;
@@ -401,3 +403,13 @@ h2.newtrajet-heading {
 
 
 
+=======
+table img {
+    width: 25px;
+    height: 25px;
+}
+
+table p {
+    text-align: center;
+}
+>>>>>>> Stashed changes
