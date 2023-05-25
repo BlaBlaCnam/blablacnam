@@ -1,8 +1,8 @@
-<div class="listeuser-container">
+<div class="adminlist-container">
     <h2 class="listeuser-body">Liste des sections :</h2>
     <form class="systeme-recherche" action="/recherche" method="get">
         <input class="recherche-user" type="text" name="q" placeholder="Recherche">
-        <button class="bouton-recherche" type="submit">Rechercher</button>
+        <button class="btnpage" type="submit">Rechercher</button>
     </form>
 
 

@@ -34,5 +34,6 @@
 {:else}
   <NavBarConnexion />
 {/if}
+
 <Router {routes} />
 <Footer />
