@@ -28,7 +28,7 @@
         <tr>
             <td>Doe</td>
             <td>Jane</td>
-            <td>very useful message</td>
+            <td>ghsdjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdsgbcjkdsbnvjkndfklnvl dnnkce</td>
             <td>20/10/2019</td>
             <td><p><img src="/eye.png"></p></td>
             <td><p><img src="/bin.png"></p></td>
