@@ -78,12 +78,7 @@ onMount(async () => {
 
       <div class="label-input">
         <label for="date-input">Date :</label>
-        <input name="date" id="date-input" class="inputCenter" type="date" placeholder="Date">
-      </div>
-
-      <div class="label-input">
-        <label for="heure-input">Heure :</label>
-        <input name="heure" id="heure-input" class="inputCenter" type="time" placeholder="Heure">
+        <input name="date" id="date-input" class="inputCenter" type="datetime-local" placeholder="Date">
       </div>
 
       <button class="btnpage" type="submit" style="margin:auto;">Enregistrer</button>
