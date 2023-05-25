@@ -1,16 +1,18 @@
-
+<script>
+  import {user} from "./../../stores/user"
+</script>
 
 <div class="test-container">
   <div class="row">
     <div class="col-md-6">
       <div class="info-container">
         <h2 class="info-heading">Information utilisateurs</h2>
-        <p> Nom: </p>
-        <p> Prénom: </p>
-        <p> Téléphone: </p>
-        <p> Date de Naissance: </p>
-        <p> Site de formatiion : </p>
-        <h3>Adresse</h3>
+        <p> Nom: {$user ? $user.nom : ''}</p>
+        <p> Prénom: {$user ? $user.prenom : ''}</p>
+        <p> Téléphone: {$user ? $user.telephone : ''}</p>
+        <p> Date de Naissance: {$user ? $user.date_naissance : ''}</p>
+        <p> Site de formatiion: </p>
+        <h3>Adresse: </h3>
         <p> Numéro: </p>
         <p> Rue: </p>
         <p> Code postal: </p>

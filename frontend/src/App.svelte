@@ -27,7 +27,7 @@
 
 </script>
 
-{#if $user && $user}
+{#if $user && parseInt($user.administrateur)}
   <NavBarAdmin />
 {:else if $user}
   <NavBarUser />
