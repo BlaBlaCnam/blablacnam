@@ -245,7 +245,6 @@ h3,
   .recherche-user {
     width:auto;
     height: 33px !important;
-    font-size: auto;
 
 }
   
@@ -317,7 +316,6 @@ color: #000;
 transition: 0.5s linear;
 }
 
-<<<<<<< Updated upstream
     .btnNewTrajet {
       display: block;
       width: 100%;
@@ -405,6 +403,7 @@ h2.newtrajet-heading {
   text-align: left;
 }
 
+
 .adminlist-container {
   max-width: 700px;
   margin: 0 auto;
@@ -416,7 +415,22 @@ h2.newtrajet-heading {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-=======
+
+.result-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+
+
+
 table img {
     width: 25px;
     height: 25px;
@@ -425,4 +439,3 @@ table img {
 table p {
     text-align: center;
 }
->>>>>>> Stashed changes
