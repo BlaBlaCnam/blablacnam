@@ -22,16 +22,16 @@
             <td>John</td>
             <td>hello world</td>
             <td>20/10/2019</td>
-            <td></td>
-            <td></td>
+            <td><p><img src="/eye.png"></p></td>
+            <td><p><img src="/bin.png"></p></td>
         </tr>
         <tr>
             <td>Doe</td>
             <td>Jane</td>
             <td>very useful message</td>
             <td>20/10/2019</td>
-            <td></td>
-            <td></td>
+            <td><p><img src="/eye.png"></p></td>
+            <td><p><img src="/bin.png"></p></td>
         </tr>
         </tbody>
     </table>
