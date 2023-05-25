@@ -1,8 +1,10 @@
 <script>
-    import { onMount } from "svelte";
+    import { onDestroy, onMount } from "svelte";
+
+    let table;
 
     onMount(() => {
-         window['$']('#table_user').DataTable({
+         table = window['$']('#table_user').DataTable({
             columns: [
                 null,
                 null,
@@ -14,10 +16,13 @@
          });
     })
 
+    onDestroy(() => {
+        table.destroy();
+    })
 </script>
 
 <div class="adminlist-container">
-    <a href="/admin/accueiladmin">
+    <a href="/admin/infoadmin">
         <button class="btnpage" type="submit">Retour</button>
     </a>
     <h2 class="listeuser-body">Liste des messages :</h2>

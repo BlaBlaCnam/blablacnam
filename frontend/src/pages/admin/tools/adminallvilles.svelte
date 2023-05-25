@@ -1,48 +1,42 @@
 <script>
-    import { onMount } from "svelte";
+    import { onDestroy, onMount } from "svelte";
+    import { api_fetch } from "../../../function";
+    import { api } from "../../../config";
 
-    onMount(() => {
-         window['$']('#table_user').DataTable({
-            columns: [
-                null,
-                {orderable: false},
-                {orderable: false},
-            ]
-         });
+    let villes = [];
+    let table;
+
+    onMount(async () => {
+        villes = await api_fetch(api + "/get_villes.php");
+        setTimeout(() => {
+            table = window['$']('#table_ville').DataTable();
+        }, 200);
     })
 
+
+    onDestroy(() => {
+        table.destroy();
+    })
 </script>
 
 <div class="adminlist-container">
-    <a href="/admin/accueiladmin">
+    <a href="/admin/infoadmin">
         <button class="btnpage" type="submit">Retour</button>
     </a>
     <h2 class="listeuser-body">Liste des villes :</h2>
 
-        <table class="table-utilisateur" id="table_user">
+        <table class="table-utilisateur" id="table_ville">
             <thead>
                 <tr>
                     <th>Nom de la ville</th>
-                    <th>voir</th>
-                    <th>Supprimer</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Saint Etienne</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
-                <tr>
-                    <td>Lyon</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
-                <tr>
-                    <td>Batman</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
+                {#each villes as ville}
+                  <tr>
+                    <td>{ville.nom}</td>
+                </tr>  
+                {/each}
             </tbody>
         </table>
 </div>

@@ -21,11 +21,13 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="/admin/listeuser">Users</a></li>
-              <li><a class="dropdown-item" href="/admin/tools/adminallmessages">messages</a></li>
+              <li><a class="dropdown-item" href="/admin/tools/adminallara">No ARA</a></li>
+              <li><a class="dropdown-item" href="/admin/tools/adminallvilles">Villes</a></li>
+              <li><a class="dropdown-item" href="/admin/tools/adminallmessages">Messages</a></li>
               <li><a class="dropdown-item" href="/admin/tools/adminallsections">Sections</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="/admin/tools/adminallsites">sites</a></li>
-              <li><a class="dropdown-item" href="/admin/tools/adminalltrajets">trajets</a></li>
+              <li><a class="dropdown-item" href="/admin/tools/adminallsites">Sites</a></li>
+              <li><a class="dropdown-item" href="/admin/tools/adminalltrajets">Trajets</a></li>
             </ul>
           </li>
         </ul>

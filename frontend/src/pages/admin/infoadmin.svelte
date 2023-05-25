@@ -1,14 +1,8 @@
-<<<<<<< Updated upstream
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
 
-<div class="test-container">
-=======
 <script>
     import {user} from "./../../stores/user"
   </script>
-  
   <div class="row test-container">
->>>>>>> Stashed changes
     <div class="row">
       <div class="col-md-6">
         <div class="info-container">
