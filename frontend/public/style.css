@@ -234,17 +234,23 @@ h3,
 }
 
 .systeme-recherche {
-    width: 40% !important;
+    width: 70% !important;
     margin: auto;
+    display: flex;
+    margin-right: auto;
+    text-align: center;
+    gap: 5px;
 }
   
   .recherche-user {
-    width: 100% !important;
-    margin: auto;
+    width:auto;
+    height: 33px !important;
+    font-size: auto;
+
 }
   
   .bouton-recherche {
-    width: 100px;
+    width: 50px;
     margin-left: auto;
     border-radius: 5px;
 }
@@ -399,10 +405,17 @@ h2.newtrajet-heading {
   text-align: left;
 }
 
-
-
-
-
+.adminlist-container {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
 =======
 table img {
     width: 25px;
