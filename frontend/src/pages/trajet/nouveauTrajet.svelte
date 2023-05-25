@@ -17,7 +17,9 @@ onMount(async () => {
       <button class="btnpage" type="submit">Retour</button>
     </a>
     <h2 class="register-heading">Ajouter un nouveau trajet</h2>
-    <form>
+    <form method="POST" action={api + "/add_trajet.php"} on:submit={api_submit(() => {
+      window.history.pushState({}, '', '/trajet/mesTrajets');
+    })}>
 
     <div class="label-input">
                   
@@ -62,8 +64,8 @@ onMount(async () => {
      </div>
 
      <div class="label-input">
-        <label name="arret" for="date-input">Arrivé :</label>
-        <select class="inputCenter" required>
+        <label for="date-input">Arrivé :</label>
+        <select name="arrivee" class="inputCenter" required>
             <option value="-1" disabled selected>Choisissez une arrivée</option>
             {#each villes as ville}
             <option value={ville.id_ville}>{ville.nom}</option>
