@@ -13,7 +13,6 @@
             <th>Contenu du message</th>
             <th>Date du message</th>
             <th>Voir</th>
-            <th>Supprimer</th>
         </tr>
         </thead>
         <tbody>
@@ -23,7 +22,6 @@
             <td>hello world</td>
             <td>20/10/2019</td>
             <td><p><img src="/eye.png"></p></td>
-            <td><p><img src="/bin.png"></p></td>
         </tr>
         <tr>
             <td>Doe</td>
@@ -31,7 +29,6 @@
             <td>ghscjkdsbnvjkndfklnvl dnnkce</td>
             <td>20/10/2019</td>
             <td><p><img src="/eye.png"></p></td>
-            <td><p><img src="/bin.png"></p></td>
         </tr>
         </tbody>
     </table>
