@@ -5,13 +5,15 @@
     <h2 class="register-heading">Ajouter un nouveau trajet</h2>
     <form>
 
-      <div class="label-input">
-        <input type="radio" id="option1" name="options" value="option1">
-        <label for="option1">Allé</label><br>
-      
-        <input type="radio" id="option2" name="options" value="option2">
-        <label for="option2">Retour</label><br>
-      </div>
+    <div class="label-input">
+        <input type="radio" id="Aller" name="Aller" value="Aller">
+        <label for="Aller">Aller</label><br>
+
+        <input type="radio" id="Retour" name="Retour" value="Retour">
+        <label for="Retour">Retour</label><br>             
+    </div>
+
+  
 
       <div class="label-input">
         <label for="date-input">Départ :</label>
