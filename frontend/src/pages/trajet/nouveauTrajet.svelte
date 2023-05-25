@@ -23,9 +23,17 @@ onMount(async () => {
                   
     </div>
 
+    <div class="label-input">
+      <label for="date-input">Aller ou Retour :</label>
+        <select name="retour" class="inputCenter" required>
+            <option value="0">Aller</option>
+            <option value="1">Retour</option>
+        </select>
+    </div>
+
       <div class="label-input">
         <label for="date-input">Départ :</label>
-        <select class="inputCenter" required>
+        <select name="depart" class="inputCenter" required>
             <option value="-1" disabled selected>Choissisez un départ</option>
             {#each villes as ville}
             <option value={ville.id_ville}>{ville.nom}</option>
@@ -35,7 +43,7 @@ onMount(async () => {
 
       <div class="label-input">
         <label for="date-input">Etape 1 :</label>
-        <select class="inputCenter" required>
+        <select name="etape1" class="inputCenter" required>
             <option value="-1" disabled selected>Choissisez une étape</option>
             {#each villes as ville}
             <option value={ville.id_ville}>{ville.nom}</option>
@@ -45,7 +53,7 @@ onMount(async () => {
 
      <div class="label-input">
         <label for="date-input">Etape 2 :</label>
-        <select class="inputCenter" required>
+        <select name="etape2" class="inputCenter" required>
             <option value="-1" disabled selected>Choisissez une étape</option>
             {#each villes as ville}
             <option value={ville.id_ville}>{ville.nom}</option>
@@ -54,7 +62,7 @@ onMount(async () => {
      </div>
 
      <div class="label-input">
-        <label for="date-input">Arrivé :</label>
+        <label name="arret" for="date-input">Arrivé :</label>
         <select class="inputCenter" required>
             <option value="-1" disabled selected>Choisissez une arrivée</option>
             {#each villes as ville}
@@ -63,13 +71,19 @@ onMount(async () => {
           </select>
      </div>
 
+     <div class="label-input">
+      <label for="date-input">Places :</label>
+        <input name="places" id="date-input" type="text" placeholder="Nombre de places">
+      </div>
+
       <div class="label-input">
         <label for="date-input">Date :</label>
-        <input id="date-input" class="inputCenter" type="date" placeholder="Date">
+        <input name="date" id="date-input" class="inputCenter" type="date" placeholder="Date">
       </div>
+
       <div class="label-input">
         <label for="heure-input">Heure :</label>
-        <input id="heure-input" class="inputCenter" type="time" placeholder="Heure">
+        <input name="heure" id="heure-input" class="inputCenter" type="time" placeholder="Heure">
       </div>
 
       <button class="btnpage" type="submit" style="margin:auto;">Enregistrer</button>
