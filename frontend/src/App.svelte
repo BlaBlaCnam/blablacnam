@@ -9,13 +9,27 @@
   import NavBarAdmin from "./components/navbars/navbar_admin.svelte";
 
   import Footer from "./components/footer.svelte";
+  import { onMount } from "svelte";
+  import { api_fetch, get_cookie } from "./function";
+  import { api } from "./config";
 
-  import {getCookie, setCookie} from "./function"
+  onMount(async () => {
+    let sessid = get_cookie("PHPSESSID");
+    if (sessid)
+    {
+      let userData = await api_fetch(api + "/try_session.php?PHPSESSID=" + sessid);
+      if (userData)
+      {
+        await user.set(userData);
+      }
+    }
+  })
+
 </script>
 
-{#if $user.is_logged_in && $user.data.administrateur}
+{#if $user && $user}
   <NavBarAdmin />
-{:else if $user.is_logged_in}
+{:else if $user}
   <NavBarUser />
 {:else}
   <NavBarConnexion />

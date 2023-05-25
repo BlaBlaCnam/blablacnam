@@ -7,16 +7,16 @@ user.subscribe((e) => {
     userValue = e;
 })
 
-export function setCookie(cname, cvalue, cminutes = 24) {
+export function set_cookie(cname, cvalue, cminutes = 24) {
     const d = new Date();
     d.setTime(d.getTime() + (cminutes*60*60*1000));
     let expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
 
-window['setCookie'] = setCookie;
+window['set_cookie'] = set_cookie;
 
-export function getCookie(cname) {
+export function get_cookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
@@ -32,14 +32,14 @@ export function getCookie(cname) {
     return "";
 }
 
-window['getCookie'] = getCookie;
+window['get_cookie'] = get_cookie;
 
 
 export async function api_fetch(url, data = new FormData())
 {
-    if (userValue.is_logged_in)
+    if (userValue)
     {
-        data.append("PHPSESSID", userValue.data.PHPSESSID);
+        data.append("PHPSESSID", userValue.PHPSESSID);
     }
     let res;
     try 
@@ -48,14 +48,14 @@ export async function api_fetch(url, data = new FormData())
     }
     catch (ex)
     {
-        alert ("Error, see console for more details.");
+        //alert ("Error, see console for more details.");
         console.log(ex);
     }
     
     if (!res.ok)
     {
-        alert ("Error, see console for more details.");
-        console.log(ex);
+        //alert ("Error, see console for more details.");
+        console.log(res);
     }
 
     let message = await res.text();

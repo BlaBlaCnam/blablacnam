@@ -134,3 +134,16 @@ Stack trace:
 #1 {main}
   thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\login.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "POST /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1", referrer: "http://localhost:5000/"
 2023/05/24 16:01:07 [error] 10812#12684: *98 CreateFile() "C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/hi.php"
+2023/05/25 09:35:59 [error] 2028#4080: *2 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom de colonne non valide : 'id_adresse'. in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php:9
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\register.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /register.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1"
+2023/05/25 09:37:18 [error] 2028#4080: *5 FastCGI sent in stderr: "PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\login.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "POST /login.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1", referrer: "http://localhost:5000/"
+2023/05/25 09:38:40 [error] 2028#4080: *5 CreateFile() "C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx/html/try_session" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "POST /try_session?PHPSESSID=4p6hbsb07of36imj2lte71vg2j HTTP/1.1", host: "127.0.0.1", referrer: "http://localhost:5000/"
+2023/05/25 09:38:46 [error] 2028#4080: *5 CreateFile() "C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx/html/try_session" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "POST /try_session?PHPSESSID=4p6hbsb07of36imj2lte71vg2j HTTP/1.1", host: "127.0.0.1", referrer: "http://localhost:5000/"
+2023/05/25 09:39:05 [error] 2028#4080: *5 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\try_session.php:6
+Stack trace:
+#0 C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\try_session.php(6): json_decode(Array)
+#1 {main}
+  thrown in C:\Users\auditeur.local\Desktop\blablacnam\backend\nginx\html\try_session.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "POST /try_session.php?PHPSESSID=4p6hbsb07of36imj2lte71vg2j HTTP/1.1", upstream: "fastcgi://127.0.0.1:9123", host: "127.0.0.1", referrer: "http://localhost:5000/"

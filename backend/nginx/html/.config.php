@@ -19,10 +19,39 @@ function hash_pw($pw)
     return (sha1($pw . $salt));
 }
 
-session_id($_POST["PHPSESSID"]);
+if (isset($_POST["PHPSESSID"]))
+    session_id($_POST["PHPSESSID"]);
+else if (isset($_GET["PHPSESSID"]))
+    session_id($_GET["PHPSESSID"]);
+
 session_start();
+
+if (isset($_POST["PHPSESSID"]) || isset($_GET["PHPSESSID"]))
+{
+    if (!isset($_SESSION["is_logged_in"]) || !$_SESSION["is_logged_in"])
+    {
+        echo "La session à expiré, merci de vous reconnecter.";  
+        exit;
+    }
+}
+
 
 header("Content-Type: text/html; charset=utf-8");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Credentials: true");
 header("Access-Control-Allow-Headers: X-Requested-With");
+
+function require_session($admin = 0)
+{
+    if (!isset($_SESSION["is_logged_in"]) || !$_SESSION["is_logged_in"])
+    {
+        echo "Vous devez être connecté pour continuer!";  
+        exit;
+    }
+
+    if ($_SESSION["user"]["administrateur"] != $admin)
+    {
+        echo "Vous n'avez pas les bon droits!";
+        exit;
+    }
+}

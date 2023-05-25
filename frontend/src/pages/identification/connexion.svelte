@@ -1,8 +1,8 @@
 <script>
-  import {api_submit} from "./../../function";
+  import {api_submit, set_cookie, get_cookie} from "./../../function";
   import {api} from "../../config";
   import {user} from "../../stores/user";
-
+  
   user.subscribe((e) => {
     console.log("NEW USR!!", e);
   })
@@ -13,7 +13,8 @@
     <h2 class="login-heading">Connexion</h2>
     <form action="{api}/login.php" on:submit={api_submit(async (data) => {
 
-        await user.set({is_logged_in: true, data: data});
+        await user.set(data);
+        set_cookie("PHPSESSID", $user.PHPSESSID);
         alert ("Login success for " + data.prenom);
         window.history.replaceState({}, '', '/');
 

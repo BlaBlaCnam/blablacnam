@@ -33,9 +33,12 @@
             <a class="nav-link active" href="#">administrateur</a>
           </li>
           <li class="nav-item dropdown band-admin">
-            <a class="dropdown-toggle nav-link active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{$user.data.prenom}</a>
+            <a class="dropdown-toggle nav-link active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{$user.prenom}</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+              <li><a class="dropdown-item" href="#" on:click={async () => {
+                await user.set(null);
+                window.history.pushState({}, '', '/');
+              }}>Déconnexion</a></li>
             </ul>
           </li>
         </ul>
