@@ -18,6 +18,28 @@
         </div>
 
     </div>
+    <div class="row">
+
+        <h2 class="info-heading">Envoyer un message</h2>
+        <form>
+            <label>Mon message:</label>
+            <input class="inputCenter" type="text" placeholder="Entrer votre message" required>
+            <div class="row">
+                <div class="col-md">
+                    <div class="bouton-modifpassword">
+                        <button class="btnpage" type="submit">Valider</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="row">
+
+        <h2 class="info-heading">Discussion</h2>
+
+<!--        Mettre les messages ici -->
+    </div>
 
 </div>
 
