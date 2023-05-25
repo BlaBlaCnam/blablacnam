@@ -16,7 +16,7 @@
         await user.set(data);
         set_cookie("PHPSESSID", $user.PHPSESSID);
         alert ("Login success for " + data.prenom);
-        window.history.replaceState({}, '', '/');
+        window.history.replaceState({}, '', '/identification/connexion');
 
       })}>
       <input name="user" type="text" placeholder="Nom d'utilisateur" required>

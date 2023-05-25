@@ -12,7 +12,7 @@ if ($query->fetch())
     exit;    
 }
 
-if (empty($_POST["section"] || empty($_POST["site"])))
+if (empty($_POST["section"]) || empty($_POST["site"]))
 {
     echo "Merci de remplir tous les champs";
     exit;
