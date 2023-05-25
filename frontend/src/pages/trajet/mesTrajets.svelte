@@ -1,7 +1,13 @@
+<script>
+    import { user } from "./../../stores/user";
+   </script>
+
 <div class="newtrajet-container">
-    <a href="/user/infouser">
-        <button class="btnpage" type="submit">Retour</button>
-    </a>
+    {#if $user && parseInt($user.administrateur)}
+    <a href="/admin/infoadmin"><button class="btnpage" type="submit">Retour</button></a>
+    {:else if $user}
+    <a href="/user/infouser"><button class="btnpage" type="submit">Retour</button></a>
+    {/if}
     <h2 class="login-heading">Mes Trajets</h2>
     <a href="/trajet/nouveauTrajet"><button class="btnNewTrajet">Nouveau trajet</button></a>
 
