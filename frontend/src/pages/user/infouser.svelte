@@ -28,7 +28,7 @@
               <a href="/trajet/mesTrajets"><button class="btnpage">Voir mes trajets</button></a>
             </div>
             <div class="col-md-4">
-              <button class="btnpage">Supprimer le compte</button>
+              <a href="/user/deleteaccount" class="btnpage">Supprimer le compte</a>
             </div>
           </div>
         </div>
