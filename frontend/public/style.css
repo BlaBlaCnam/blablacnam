@@ -266,6 +266,10 @@ table {
     margin-bottom: 20px;
 }
 
+.dataTables_filter {
+    padding-left: 20px;
+}
+
 table thead {
     color: #ffffff;
     background-color: #c10001;

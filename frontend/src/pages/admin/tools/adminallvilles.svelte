@@ -5,8 +5,6 @@
          window['$']('#table_user').DataTable({
             columns: [
                 null,
-                null,
-                null,
                 {orderable: false},
                 {orderable: false},
             ]
@@ -19,30 +17,29 @@
     <a href="/admin/accueiladmin">
         <button class="btnpage" type="submit">Retour</button>
     </a>
-    <h2 class="listeuser-body">Liste des numéro ARA :</h2>
+    <h2 class="listeuser-body">Liste des villes :</h2>
 
         <table class="table-utilisateur" id="table_user">
             <thead>
                 <tr>
-                    <th>N°ara</th>
-                    <th>Nom</th>
-                    <th>Prenom</th>
+                    <th>Nom de la ville</th>
                     <th>voir</th>
                     <th>Supprimer</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>ARA123456</td>
-                    <td>Bali</td>
-                    <td>Timur</td>
+                    <td>Saint Etienne</td>
                     <td><p><img src="/eye.png"></p></td>
                     <td><p><img src="/bin.png"></p></td>
                 </tr>
                 <tr>
-                    <td>ARA696969</td>
-                    <td>FatCock</td>
-                    <td>Romain</td>
+                    <td>Lyon</td>
+                    <td><p><img src="/eye.png"></p></td>
+                    <td><p><img src="/bin.png"></p></td>
+                </tr>
+                <tr>
+                    <td>Batman</td>
                     <td><p><img src="/eye.png"></p></td>
                     <td><p><img src="/bin.png"></p></td>
                 </tr>
