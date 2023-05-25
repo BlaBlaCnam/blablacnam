@@ -1,3 +1,17 @@
+<script>
+  import { onMount } from "svelte";
+  import { api_submit } from "../../function";
+  import { api } from "../../config";
+
+
+  let villes = [];
+
+onMount(async () => {
+  villes = await api_fetch(api + "/get_villes.php");
+})
+
+</script>
+
 <div class="newtrajet-container">
     <a href="/trajet/mesTrajets">
       <button class="btnpage" type="submit">Retour</button>
@@ -6,52 +20,46 @@
     <form>
 
     <div class="label-input">
-        <input type="radio" id="Aller" name="Aller" value="Aller">
-        <label for="Aller">Aller</label><br>
-
-        <input type="radio" id="Retour" name="Retour" value="Retour">
-        <label for="Retour">Retour</label><br>             
+                  
     </div>
-
-  
 
       <div class="label-input">
         <label for="date-input">Départ :</label>
         <select class="inputCenter" required>
-            <option value="" disabled selected>Départ</option>
-    
-            <option value="lieu1">Lieu 1</option>
-            <option value="lieu2">Lieu 2</option>
+            <option value="-1" disabled selected>Choissisez un départ</option>
+            {#each villes as ville}
+            <option value={ville.id_ville}>{ville.nom}</option>
+            {/each}
         </select>
       </div>
 
       <div class="label-input">
         <label for="date-input">Etape 1 :</label>
         <select class="inputCenter" required>
-            <option value="" disabled selected>Etape 1</option>
-    
-            <option value="etape3">Etape 1</option>
-            <option value="etape4">Etape 2</option>
+            <option value="-1" disabled selected>Choissisez une étape</option>
+            {#each villes as ville}
+            <option value={ville.id_ville}>{ville.nom}</option>
+            {/each}
           </select>
      </div>
 
      <div class="label-input">
         <label for="date-input">Etape 2 :</label>
         <select class="inputCenter" required>
-            <option value="" disabled selected>Etape 2</option>
-    
-            <option value="etape3">Etape 3</option>
-            <option value="etape4">Etape 4</option>
+            <option value="-1" disabled selected>Choisissez une étape</option>
+            {#each villes as ville}
+            <option value={ville.id_ville}>{ville.nom}</option>
+            {/each}
           </select>
      </div>
 
      <div class="label-input">
         <label for="date-input">Arrivé :</label>
         <select class="inputCenter" required>
-            <option value="" disabled selected>Arrivé</option>
-    
-            <option value="arrivee1">Arrivée 1</option>
-            <option value="arrivee2">Arrivée 2</option>
+            <option value="-1" disabled selected>Choisissez une arrivée</option>
+            {#each villes as ville}
+            <option value={ville.id_ville}>{ville.nom}</option>
+            {/each}
           </select>
      </div>
 
