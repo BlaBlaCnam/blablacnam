@@ -9,6 +9,7 @@
   {:else if $user}
   <a href="/user/infouser"><button class="btnpage" type="submit">Retour</button></a>
   {/if}
+  
   <h2 class="info-heading">Modification des informations utilisateurs</h2>
   <form>
     <input class="inputCenter" type="text" placeholder="Nom" required>
