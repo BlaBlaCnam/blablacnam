@@ -19,7 +19,7 @@
     <img src="/BLABLACNAM.png" alt="Logo" class="logo">
     <h2 class="register-heading">Inscription</h2>
     <form method="POST" action={api + "/register.php"} on:submit={api_submit(() => {
-      window.history.pushState({}, '', '/');
+      window.history.pushState({}, '', '/identification/connexion');
     })}>
       <input name="id_ara" class="inputCenter" type="text" placeholder="Numéro ARA" required />
       <input name="mail" class="inputCenter" type="email" placeholder="Adresse e-mail" required />
