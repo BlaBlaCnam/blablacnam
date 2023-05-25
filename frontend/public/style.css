@@ -15,6 +15,10 @@ nav.navbar {
     margin: 0px !important;
 }
 
+.color-band-admin {
+    background-color: rgb(103, 221, 103);
+}
+
 .btn-primary {
     background-color: #c10001 !important;
 }
@@ -28,7 +32,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height:100px;
+    height: 100px;
 }
 
 .footer-content p {
@@ -48,16 +52,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-}
-
-.admin-view-user-container {
-    max-width: 400px;
-    margin: 2% auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
 }
 
 .logo {
@@ -89,19 +83,19 @@ input[type="date"] {
 }
 
 button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #f4f4f4;
-  color: #333;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #e04e3e;
-  color: #fff;
+    background-color: #e04e3e;
+    color: #fff;
 }
 
 .register-link {
@@ -183,7 +177,6 @@ p,
 h1,
 h2,
 h3,
-
 .bouton-user {
     margin: 30px;
     max-height: fit-content;
@@ -241,19 +234,26 @@ h3,
     text-align: center;
     gap: 5px;
 }
-  
-  .recherche-user {
-    width:auto;
-    height: 33px !important;
 
+.recherche-user {
+    width: auto;
+    height: 33px !important;
 }
-  
-  .bouton-recherche {
+
+.bouton-recherche {
     width: 50px;
+    .recherche-user {
+        width: 100% !important;
+        margin: auto;
+    }
+}
+
+.bouton-recherche {
+    width: 100px;
     margin-left: auto;
     border-radius: 5px;
 }
-  
+
 table {
     width: 50%;
     border-collapse: collapse;
@@ -276,75 +276,75 @@ table tbody {
 
 th,
 td {
-padding: 8px;
-border-bottom: 1px solid #000000;
+    padding: 8px;
+    border-bottom: 1px solid #000000;
 }
 
 tr {
-transition: 0.2s linear;
+    transition: 0.2s linear;
 }
 
 table tbody tr:hover {
-color: #FFFFFF;
-transition: 0.5s linear;
-background-color: #c10001;
+    color: #FFFFFF;
+    transition: 0.5s linear;
+    background-color: #c10001;
 }
 
 table tbody tr:hover input[type=checkbox] {
-transition: 0.5s linear;
-accent-color: #FFFFFF;
+    transition: 0.5s linear;
+    accent-color: #FFFFFF;
 }
 
 table input[type=checkbox] {
-accent-color: #c10001;
-transition: 0.2s linear;
+    accent-color: #c10001;
+    transition: 0.2s linear;
 }
 
 table tbody tr:hover a {
-color: #FFFFFF;
-transition: 0.5s linear;
+    color: #FFFFFF;
+    transition: 0.5s linear;
 }
 
 table a {
-color: #000;
-transition: 0.2s linear;
-text-decoration: none;
+    color: #000;
+    transition: 0.2s linear;
+    text-decoration: none;
 }
 
 table tbody tr:hover a:hover {
-color: #000;
-transition: 0.5s linear;
+    color: #000;
+    transition: 0.5s linear;
 }
 
-    .btnNewTrajet {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      background-color: #f4f4f4;
-      color: #333;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    
-    .btnNewTrajet:hover {
-      background-color: #e04e3e;
-      color: #fff;
-    }
+.btnNewTrajet {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    .modifinfo-container {
-      max-width: 500px;
-      margin: 0 auto;
-      margin-top: 2%;
-      margin-bottom: 2%;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-      text-align: center;
-  }
+.btnNewTrajet:hover {
+    background-color: #e04e3e;
+    color: #fff;
+}
 
-  .info-container {
+.modifinfo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.info-container {
     max-width: 500px;
     margin: 0 auto;
     margin-top: 2%;
@@ -357,67 +357,12 @@ transition: 0.5s linear;
 }
 
 .bouton-modifpassword {
-  display: flex;
-  margin-right: 10px;
+    display: flex;
+    margin-right: 10px;
 }
 
 .newtrajet-container {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-  text-align: left;
-}
-
-h2.newtrajet-heading {
-  text-align: center;
-  /* Vos styles spécifiques pour l'h2 de la section d'inscription */
-}
-
-.label-input {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.label-input > label {
-  width: 80px;
-  margin-right: 10px;
-  text-align: left;
-  margin-left: auto;
-}
-
-.gestion-container {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-  text-align: left;
-}
-
-
-.adminlist-container {
-  max-width: 700px;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.result-container{
-    max-width: 1000px;
+    max-width: 500px;
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -428,8 +373,60 @@ h2.newtrajet-heading {
     text-align: left;
 }
 
+h2.newtrajet-heading {
+    text-align: center;
+    /* Vos styles spécifiques pour l'h2 de la section d'inscription */
+}
 
+.label-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
+.label-input>label {
+    width: 80px;
+    margin-right: 10px;
+    text-align: left;
+    margin-left: auto;
+}
+
+.gestion-container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.adminlist-container {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.result-container {
+    max-width: 1000px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
 
 table img {
     width: 25px;
@@ -438,4 +435,7 @@ table img {
 
 table p {
     text-align: center;
+}
+
+
 }

@@ -1,39 +1,55 @@
-<div class="admin-view-user-container">
-    <table>
-        <th>Information utilisateurs:</th>
-        <tr>
-            <td>nom :</td>
-            <td>asley</td>
-        </tr>
-        <tr>
-            <td>Prénom:</td>
-            <td>rick</td>
-        </tr>
-        <tr>
-            <td>Téléphone :</td>
-            <td>09 83 29 43 22</td>
-        </tr>
 
-        <th>Adresse :</th>
-        <tr>
-            <td>numero :</td>
-            <td>78</td>
-        </tr>
-        <tr>
-            <td>rue :</td>
-            <td>give-up</td>
-        </tr>
-        <tr>
-            <td>code postal :</td>
-            <td>09 420</td>
-        </tr>
-        <tr>
-            <td>ville :</td>
-            <td>luverpool</td>
-        </tr>
-    </table>
-    <div class="bouton-user">
-        <a href="/user/modifinfouser"><button class="btnpage" > Modifier mes données</button></a>
-        <button class="btnpage">Supprimer le compte</button>   
+
+<div class="test-container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="info-container">
+          <h2 class="info-heading">Information utilisateurs</h2>
+          <p> Nom: </p>
+          <p> Prénom: </p>
+          <p> Téléphone: </p>
+          <p> Date de Naissance: </p>
+          <p> Site de formatiion : </p>
+          <h3>Adresse</h3>
+          <p> Numéro: </p>
+          <p> Rue: </p>
+          <p> Code postal: </p>
+          <p> Ville: </p>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="row">
+          <div class="gestion-container">
+            <h3 style="text-align: center;">Gestion de mon profil</h3>
+            <div class="bouton-user">
+              <div class="col-md-4">
+                <a href="/user/modifinfouser"><button class="btnpage" > Modifier mon profil</button></a>
+              </div>
+              <div class="col-md-4">
+                <a href="/trajet/mesTrajets"><button class="btnpage">Voir mes trajets</button></a>
+              </div>
+              <div class="col-md-4">
+                <button class="btnpage">Supprimer le compte</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div>
+            <img class="img-accueil" src="/voiturerouge.jpg" alt="">
+  
+          </div>
+  
+        </div>
+  
+      </div>
     </div>
-</div>
+    </div>
+  
+  
+  
+  
+  
+  
