@@ -433,9 +433,16 @@ table img {
     height: 25px;
 }
 
-table, p{
+a img {
+    width: 50px;
+    height: 50px;
+}
+
+table,
+p {
     text-align: center;
     margin: auto;
+<<<<<<< Updated upstream
 }
 
 .infotrajet-container {
@@ -452,5 +459,11 @@ table, p{
 
 h2.infotrajet-heading{
     text-align: left;
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+}
+=======
 }
 
+>>>>>>> 23300aac40edf4b390d75b7bfc6f3502f38f81bf
