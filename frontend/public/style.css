@@ -393,7 +393,7 @@ h2.newtrajet-heading {
 }
 
 .gestion-container {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -442,7 +442,6 @@ table,
 p {
     text-align: center;
     margin: auto;
-<<<<<<< Updated upstream
 }
 
 .infotrajet-container {
@@ -459,11 +458,9 @@ p {
 
 h2.infotrajet-heading{
     text-align: left;
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-}
-=======
 }
 
->>>>>>> 23300aac40edf4b390d75b7bfc6f3502f38f81bf
+.message-user{
+    height: 5px;
+    width: auto;
+}
