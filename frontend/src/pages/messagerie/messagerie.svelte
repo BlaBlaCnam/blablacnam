@@ -6,6 +6,22 @@
     let messagesUser = [];
 
 
+    onMount(() => {
+        table = window['$']('#table_user').DataTable({
+            columns: [
+                null,
+                null,
+                null,
+                null,
+                {orderable: false},
+                {orderable: false},
+            ]
+        });
+    })
+
+    onDestroy(() => {
+        table.destroy();
+    })
 
 
 
