@@ -1,3 +1,4 @@
+
 body {
     margin: 0px !important;
     padding: 0px !important;
@@ -436,4 +437,20 @@ table img {
 table, p{
     text-align: center;
     margin: auto;
+}
+
+.infotrajet-container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+h2.infotrajet-heading{
+    text-align: left;
 }

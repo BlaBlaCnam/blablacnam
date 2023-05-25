@@ -6,39 +6,52 @@
     <form>
 
       <div class="label-input">
-        <input type="radio" id="alle" name="alle" value="alle">
-        <label for="retour">Allée simple</label>
-        <input type="radio" id="retour" name="retour" value="retour">
-        <label for="retour">Retour</label>
+        <input type="radio" id="option1" name="options" value="option1">
+        <label for="option1">Option 1</label><br>
+      
+        <input type="radio" id="option2" name="options" value="option2">
+        <label for="option2">Option 2</label><br>
       </div>
 
-      <select class="inputCenter" required>
-        <option value="" disabled selected>Départ</option>
+      <div class="label-input">
+        <label for="date-input">Départ :</label>
+        <select class="inputCenter" required>
+            <option value="" disabled selected>Départ</option>
+    
+            <option value="lieu1">Lieu 1</option>
+            <option value="lieu2">Lieu 2</option>
+        </select>
+      </div>
 
-        <option value="lieu1">Lieu 1</option>
-        <option value="lieu2">Lieu 2</option>
+      <div class="label-input">
+        <label for="date-input">Etape 1 :</label>
+        <select class="inputCenter" required>
+            <option value="" disabled selected>Etape 1</option>
+    
+            <option value="etape3">Etape 1</option>
+            <option value="etape4">Etape 2</option>
+          </select>
+     </div>
 
-      </select>
-      <select class="inputCenter" required>
-        <option value="" disabled selected>Etape 1</option>
+     <div class="label-input">
+        <label for="date-input">Etape 2 :</label>
+        <select class="inputCenter" required>
+            <option value="" disabled selected>Etape 2</option>
+    
+            <option value="etape3">Etape 3</option>
+            <option value="etape4">Etape 4</option>
+          </select>
+     </div>
 
-        <option value="etape1">Etape 1</option>
-        <option value="etape2">Etape 2</option>
-      </select>
-
-      <select class="inputCenter" required>
-        <option value="" disabled selected>Etape 2</option>
-
-        <option value="etape3">Etape 3</option>
-        <option value="etape4">Etape 4</option>
-      </select>
-
-      <select class="inputCenter" required>
-        <option value="" disabled selected>Arrivé</option>
-
-        <option value="arrivee1">Arrivée 1</option>
-        <option value="arrivee2">Arrivée 2</option>
-      </select>
+     <div class="label-input">
+        <label for="date-input">Arrivé :</label>
+        <select class="inputCenter" required>
+            <option value="" disabled selected>Arrivé</option>
+    
+            <option value="arrivee1">Arrivée 1</option>
+            <option value="arrivee2">Arrivée 2</option>
+          </select>
+     </div>
 
       <div class="label-input">
         <label for="date-input">Date :</label>
