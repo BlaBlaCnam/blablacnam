@@ -7,10 +7,10 @@
 
       <div class="label-input">
         <input type="radio" id="option1" name="options" value="option1">
-        <label for="option1">Option 1</label><br>
+        <label for="option1">Allé</label><br>
       
         <input type="radio" id="option2" name="options" value="option2">
-        <label for="option2">Option 2</label><br>
+        <label for="option2">Retour</label><br>
       </div>
 
       <div class="label-input">
@@ -59,10 +59,10 @@
       </div>
       <div class="label-input">
         <label for="heure-input">Heure :</label>
-        <input id="heure-input" class="inputCenter" type="date" placeholder="Heure">
+        <input id="heure-input" class="inputCenter" type="time" placeholder="Heure">
       </div>
 
-      <button class="btnpage" type="submit">Enregistrer</button>
+      <button class="btnpage" type="submit" style="margin:auto;">Enregistrer</button>
     </form>
   </div>
   
