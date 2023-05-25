@@ -17,7 +17,18 @@ if (!$user)
 
 $user["PHPSESSID"] = session_id();
 
-$_SESSION["is_logged_in"] = true;
+
+$query = $db->prepare("select * from SITE where id_site = ?");
+$query->execute([$user['id_site']]);
+
+$user["site"] = $query->fetch();
+
+$query = $db->prepare("select * from SECTION where id_section = ?");
+$query->execute([$user['id_section']]);
+
+$user["section"] = $query->fetch();
+
 $_SESSION["user"] = $user;
+$_SESSION["is_logged_in"] = true;
 
 echo json_encode($user);

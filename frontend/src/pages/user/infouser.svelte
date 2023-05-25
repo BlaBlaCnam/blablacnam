@@ -11,12 +11,8 @@
         <p> Prénom: {$user ? $user.prenom : ''}</p>
         <p> Téléphone: {$user ? $user.telephone : ''}</p>
         <p> Date de Naissance: {$user ? $user.date_naissance : ''}</p>
-        <p> Site de formatiion: </p>
-        <h3>Adresse: </h3>
-        <p> Numéro: </p>
-        <p> Rue: </p>
-        <p> Code postal: </p>
-        <p> Ville: </p>
+        <p> Site de formation:{$user ? $user.site.nom : ''} </p>
+        <p> Section:{$user ? $user.section.nom : ''} </p>
       </div>
     </div>
 
