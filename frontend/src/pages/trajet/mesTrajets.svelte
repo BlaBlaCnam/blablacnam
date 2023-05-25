@@ -1,7 +1,7 @@
 <div class="newtrajet-container">
     <a href="/user/infouser">
         <button class="btnpage" type="submit">Retour</button>
-      </a>
+    </a>
     <h2 class="login-heading">Mes Trajets</h2>
     <a href="/trajet/nouveauTrajet"><button class="btnNewTrajet">Nouveau trajet</button></a>
 

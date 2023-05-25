@@ -14,7 +14,11 @@
     })
 
 </script>
+
 <div class="adminlist-container">
+    <a href="/admin/accueiladmin">
+        <button class="btnpage" type="submit">Retour</button>
+    </a>
     <h2 class="listeuser-body">Liste des utilisateurs :</h2>
 
         <table class="table-utilisateur" id="table_user">
