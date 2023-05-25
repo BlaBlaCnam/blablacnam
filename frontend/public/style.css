@@ -396,16 +396,37 @@ h2.newtrajet-heading {
 }
 
 .gestion-container {
-    max-width: 600px;
+    width: 1200px;
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 2%;
-    padding: 20px;
+    /*padding: 20px;*/
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
 }
+
+.info-row{
+    margin-right: 50px !important;
+
+}
+
+.btn-message{
+    background-image: url("/message-icon-png-14932.png");
+background-position: center;
+    background-repeat: no-repeat;
+background-size: 40px;
+    display: block;
+    height: 32px;
+    width: 39px;
+    /*padding: -2px;*/
+    /*margin-bottom: -2px;*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
 
 .adminlist-container {
     max-width: fit-content;
