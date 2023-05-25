@@ -4,6 +4,14 @@
     </a>
     <h2 class="register-heading">Ajouter un nouveau trajet</h2>
     <form>
+
+      <div class="label-input">
+        <input type="radio" id="alle" name="alle" value="alle">
+        <label for="retour">Allée simple</label>
+        <input type="radio" id="retour" name="retour" value="retour">
+        <label for="retour">Retour</label>
+      </div>
+
       <select class="inputCenter" required>
         <option value="" disabled selected>Départ</option>
 
@@ -39,14 +47,6 @@
       <div class="label-input">
         <label for="heure-input">Heure :</label>
         <input id="heure-input" class="inputCenter" type="date" placeholder="Heure">
-      </div>
-
-      <div class="label-input">
-        <label for="retour">Retour :</label>
-            <input type="radio" id="oui" name="retour" value="oui">
-        <label for="oui">Oui</label>
-            <input type="radio" id="non" name="retour" value="non">
-        <label for="non">Non</label>
       </div>
 
       <button class="btnpage" type="submit">Enregistrer</button>
