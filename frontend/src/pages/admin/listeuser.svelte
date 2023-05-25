@@ -1,11 +1,23 @@
+<script>
+    import { onMount } from "svelte";
+
+    onMount(() => {
+         window['$']('#table_user').DataTable({
+            columns: [
+                null,
+                null,
+                null,
+                {orderable: false},
+                {orderable: false},
+            ]
+         });
+    })
+
+</script>
 <div class="adminlist-container">
     <h2 class="listeuser-body">Liste des utilisateurs :</h2>
-    <form class="systeme-recherche" action="/recherche" method="get">
-        <input class="recherche-user" type="text" name="q" placeholder="Recherche">
-        <button class="btnpage" type="submit">Rechercher</button>
-    </form>
 
-        <table class="table-utilisateur">
+        <table class="table-utilisateur" id="table_user">
             <thead>
                 <tr>
                     <th>Nom</th>
@@ -46,4 +58,4 @@
                 </tr>
             </tbody>
         </table>
-</div> 
+</div>
