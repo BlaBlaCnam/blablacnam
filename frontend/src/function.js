@@ -48,13 +48,13 @@ export async function api_fetch(url, data = new FormData())
     }
     catch (ex)
     {
-        //alert ("Error, see console for more details.");
+        alert ("Error, see console for more details.");
         console.log(ex);
     }
     
     if (!res.ok)
     {
-        //alert ("Error, see console for more details.");
+        alert ("Error, see console for more details.");
         console.log(res);
     }
 
