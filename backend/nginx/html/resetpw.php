@@ -12,11 +12,7 @@ if (hash_pw($_POST["old_pw"]) != $_SESSION["user"]["mot_de_passe"])
     exit;
 }
 
-if (strlen($_POST["pw1"]) < 5)
-{
-    echo "Le mot de passe doit etre d'au moins 6 caracteres!";
-    exit ;
-}
+check_pw_safety($_POST["pw1"]);
 
 if ($_POST["pw1"] == $_POST["pw2"])
 {

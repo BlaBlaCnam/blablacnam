@@ -55,3 +55,12 @@ function require_session($admin = 0)
         exit;
     }
 }
+
+function check_pw_safety($pw)
+{
+    if (strlen($pw) < 5)
+    {
+        echo "Le mot de passe doit etre d'au moins 6 caracteres!";
+        exit ;
+    }
+}
