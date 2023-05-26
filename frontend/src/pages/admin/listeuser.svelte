@@ -31,7 +31,7 @@
 </script>
 
 <div class="adminlist-container">
-    <a href="/admin/accueiladmin">
+    <a href="/admin/infoadmin">
         <button class="btnpage" type="submit">Retour</button>
     </a>
     <h2 class="listeuser-body">Liste des utilisateurs :</h2>

@@ -1,11 +1,5 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
 <script>
-<<<<<<< Updated upstream
-    import {user} from "./../../stores/user"
-</script>
-<div class="test-container"></div>
-  <div class="row test-container">
-=======
     import { onDestroy, onMount } from "svelte";
     import { api_fetch } from "../../function";
     import { api } from "../../config";
@@ -68,7 +62,6 @@
 </script>
 
 <!--infouserconnected-->
->>>>>>> Stashed changes
     <div class="row">
       <div class="col-md-6">
         <div class="info-container">
@@ -106,13 +99,9 @@
       </div>
     </div>
 
-<<<<<<< Updated upstream
-    <!--tables-->
-=======
 
 
 <!--infouser-->
->>>>>>> Stashed changes
 <div class="row">
     <div class="col adminlist-container">
         <div class="col">
