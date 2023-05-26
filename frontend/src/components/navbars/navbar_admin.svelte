@@ -33,9 +33,6 @@
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item band-admin">
-            <a class="nav-link active color-band-admin" href="#">administrateur</a>
-          </li>
           <li class="nav-item dropdown band-admin">
             <a class="dropdown-toggle nav-link active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{$user.prenom}</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -45,6 +42,9 @@
                 window.history.pushState({}, '', '/');
               }}>Déconnexion</a></li>
             </ul>
+          </li>
+          <li class="nav-item band-admin">
+            <a class="nav-link active color-band-admin" href="#">administrateur</a>
           </li>
         </ul>
       </div>
