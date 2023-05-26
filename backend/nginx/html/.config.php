@@ -2,7 +2,7 @@
 
 try 
 {
-    $db = new PDO("sqlsrv:Server=172.16.100.110,1433;Database=BLABLACNAM", "sa" , "d70PMWhgdzq8NAùùl73,;:jdqzo");
+    $db = new PDO("sqlsrv:Server=172.16.100.110;Database=BLABLACNAM", "sa" , "d70PMWhgdzq8NAùùl73,;:jdqzo");
 } 
 catch (Exception $ex)
 {
@@ -26,11 +26,24 @@ else if (isset($_GET["PHPSESSID"]))
 
 session_start();
 
+
+if (isset($_SESSION["is_logged_in"]) && $_SESSION["is_logged_in"])
+{
+    $query = $db->prepare("select * from UTILISATEUR where id_utilisateur = ?");
+    $query->execute([$_SESSION["user"]["id_utilisateur"]]);
+    if (!$query->fetch())
+    {
+        session_destroy();
+        echo json_encode(["session_expired" => true]);
+        exit;
+    }
+}
+
 if (isset($_POST["PHPSESSID"]) || isset($_GET["PHPSESSID"]))
 {
     if (!isset($_SESSION["is_logged_in"]) || !$_SESSION["is_logged_in"])
     {
-        echo "La session à expiré, merci de vous reconnecter.";  
+        echo json_encode(["session_expired" => true]);
         exit;
     }
 }
