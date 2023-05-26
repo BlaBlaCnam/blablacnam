@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import { api_submit } from "../../function";
   import { api } from "../../config";
+  import { empty } from "svelte/internal";
 
 
   let villes = [];
@@ -9,6 +10,18 @@
 onMount(async () => {
   villes = await api_fetch(api + "/get_villes.php");
 })
+
+ function enableDisableSelect2() {
+      var select1 = document.getElementById("etape1");
+      var select2 = document.getElementById("etape2");
+
+      if (select1.value !== "") {
+          select2.disabled = false;
+      } else {
+          select2.disabled = true;
+          select2.selectedIndex = 0;
+      }
+  }
 
 </script>
 
@@ -27,7 +40,7 @@ onMount(async () => {
 
     <div class="label-input">
       <label for="date-input">Aller ou Retour :</label>
-        <select name="retour" class="inputCenter" required>
+        <select name="retour" class="inputCenter" required="required">
             <option value="0">Aller</option>
             <option value="1">Retour</option>
         </select>
@@ -35,8 +48,8 @@ onMount(async () => {
 
       <div class="label-input">
         <label for="date-input">Départ :</label>
-        <select name="depart" class="inputCenter" required>
-            <option value="-1" disabled selected>Choissisez un départ</option>
+        <select name="depart" id="depart" class="inputCenter" required="required">
+            <option value="">Choissisez un départ</option>
             {#each villes as ville}
             <option value={ville.id_ville}>{ville.nom}</option>
             {/each}
@@ -45,8 +58,8 @@ onMount(async () => {
 
       <div class="label-input">
         <label for="date-input">Etape 1 :</label>
-        <select name="etape1" class="inputCenter" required>
-            <option value="-1" disabled selected>Choissisez une étape</option>
+        <select name="etape1" id="etape1" class="inputCenter" on:change={enableDisableSelect2}>
+            <option value="">Choissisez une étape</option>
             {#each villes as ville}
             <option value={ville.id_ville}>{ville.nom}</option>
             {/each}
@@ -55,8 +68,8 @@ onMount(async () => {
 
      <div class="label-input">
         <label for="date-input">Etape 2 :</label>
-        <select name="etape2" class="inputCenter" required>
-            <option value="-1" disabled selected>Choisissez une étape</option>
+        <select name="etape2" id="etape2" class="inputCenter" disabled="disabled">
+            <option value="">Choisissez une étape</option>
             {#each villes as ville}
             <option value={ville.id_ville}>{ville.nom}</option>
             {/each}
@@ -65,8 +78,8 @@ onMount(async () => {
 
      <div class="label-input">
         <label for="date-input">Arrivé :</label>
-        <select name="arrivee" class="inputCenter" required>
-            <option value="-1" disabled selected>Choisissez une arrivée</option>
+        <select name="arrivee" id="arrivee" class="inputCenter" required="required">
+            <option value="">Choisissez une arrivée</option>
             {#each villes as ville}
             <option value={ville.id_ville}>{ville.nom}</option>
             {/each}
@@ -75,15 +88,14 @@ onMount(async () => {
 
      <div class="label-input">
       <label for="date-input">Places :</label>
-        <input name="places" id="date-input" type="text" placeholder="Nombre de places">
+        <input name="places" id="date-input" type="text" placeholder="Nombre de places" required="required">
       </div>
 
       <div class="label-input">
         <label for="date-input">Date :</label>
-        <input name="date" id="date-input" class="inputCenter" type="datetime-local" placeholder="Date">
+        <input name="date" id="date-input" required="required" class="inputCenter" type="datetime-local" placeholder="Date">
       </div>
 
       <button class="btnpage" type="submit" style="margin:auto;">Enregistrer</button>
     </form>
   </div>
-  

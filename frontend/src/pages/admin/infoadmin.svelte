@@ -130,12 +130,9 @@
             <tbody>
             {#each users as user}
                 <tr>
-                    <td>
-                        {user.nom}
-                    </td>
-                    <td>
-                        {user.prenom}
-                    </td>
+                    <td>{user.nom}</td>
+                    <td>{user.prenom}</td>
+                    <td>{user.email}</td>
                 </tr>
             {/each}
             </tbody>
