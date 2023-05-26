@@ -15,11 +15,6 @@ $query = $db->prepare("INSERT INTO ARRET (id_trajet, id_ville, ordre)
                         VALUES
                         (?, ?, ?)");
 
-if ($_POST["depart"] == $_POST["arrivee"])
-{
-    
-}
-
 $query->execute([$lastTrajetID, $_POST["depart"], 1]);
 
 if (!empty($_POST["etape1"]))

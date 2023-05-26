@@ -15,14 +15,13 @@
       <thead>
         <tr>
           <th>Date</th>
-          <th>Lieu de départ</th>
-          <th>Lieu d'arrivée</th>
+          <th>Départ</th>
+          <th>Arrivée</th>
           <th>Details</th>
           <th>Supprimer</th>
         </tr>
       </thead>
       <tbody>
-      
         <tr>
           <td>01/05/2023</td>
           <td>Paris</td>

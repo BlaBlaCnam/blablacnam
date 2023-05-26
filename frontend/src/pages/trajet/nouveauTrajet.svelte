@@ -1,14 +1,16 @@
 <script>
   import { onMount } from "svelte";
-  import { api_submit } from "../../function";
+  import { api_fetch, api_submit } from "../../function";
   import { api } from "../../config";
   import { empty } from "svelte/internal";
 
 
   let villes = [];
+  let sites = [];
 
 onMount(async () => {
   villes = await api_fetch(api + "/get_villes.php");
+  sites = await api_fetch(api + "/get_sites.php");
 })
 
  function enableDisableSelect2() {
@@ -21,6 +23,20 @@ onMount(async () => {
           select2.disabled = true;
           select2.selectedIndex = 0;
       }
+  }
+
+  function retour() {
+    var retour = document.getElementById("retour");
+    
+
+    if (retour.value = 0)
+    {
+        
+    }
+    else
+    {
+
+    }
   }
 
 </script>
@@ -40,7 +56,7 @@ onMount(async () => {
 
     <div class="label-input">
       <label for="date-input">Aller ou Retour :</label>
-        <select name="retour" class="inputCenter" required="required">
+        <select name="retour" id="retour" class="inputCenter" required="required">
             <option value="0">Aller</option>
             <option value="1">Retour</option>
         </select>
