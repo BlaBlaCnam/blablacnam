@@ -26,7 +26,6 @@
                     <th>Date de départ</th>
                     <th>Heure de départ</th>
                     <th>Nombre de places</th>
-                    <th>Voir</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -37,7 +36,6 @@
                         <td>{new Date(trajet.date_trajet).toLocaleDateString()}</td>
                         <td>{new Date(trajet.date_trajet).toLocaleTimeString()}</td>
                         <td>{trajet.places}</td>
-                        <td><img src="/eye.png"></td>
                     </tr>
                 {/each}
                 <!-- ... et ainsi de suite pour chaque trajet -->

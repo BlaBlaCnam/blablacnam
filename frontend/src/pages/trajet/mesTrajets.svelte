@@ -1,6 +1,18 @@
 <script>
     import { user } from "./../../stores/user";
-   </script>
+    import { onMount } from "svelte";
+    import { api_fetch } from "../../function";
+    import { api } from "../../config";
+
+    let trajets = [];
+
+    onMount(async () => {
+        trajets = await api_fetch(api + "/get_mesTrajets.php");
+        console.log(trajets)
+    })
+
+
+</script>
 
 <div class="newtrajet-container">
     {#if $user && parseInt($user.administrateur)}
@@ -13,31 +25,24 @@
 
     <table class="table">
       <thead>
-        <tr>
-          <th>Date</th>
-          <th>Départ</th>
-          <th>Arrivée</th>
-          <th>Details</th>
-          <th>Supprimer</th>
-        </tr>
+          <tr>
+              <th>Lieu de départ</th>
+              <th>Lieu d'arrivée</th>
+              <th>Date de départ</th>
+              <th>Heure de départ</th>
+              <th>Nombre de places</th>
+          </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>01/05/2023</td>
-          <td>Paris</td>
-          <td>Lyon</td>
-          <td><p><a href="/trajet/infotrajet"><img src="/eye.png"></a></p></td>
-          <td><p><img src="/bin.png"></p></td>
-        </tr>
-        
-        <tr>
-          <td>05/05/2023</td>
-          <td>Lyon</td>
-          <td>Marseille</td>
-          <td><p><a href="/trajet/infotrajet"><img src="/eye.png"></a></p></td>
-          <td><p><img src="/bin.png"></p></td>
-        </tr>
-     
+          {#each trajets as trajet}
+              <tr>
+                  <td>{trajet.depart}</td>
+                  <td>{trajet.arrivee}</td>
+                  <td>{new Date(trajet.date_trajet).toLocaleDateString()}</td>
+                  <td>{new Date(trajet.date_trajet).toLocaleTimeString()}</td>
+                  <td>{trajet.places}</td>
+              </tr>
+          {/each}
       </tbody>
     </table>
   </div>

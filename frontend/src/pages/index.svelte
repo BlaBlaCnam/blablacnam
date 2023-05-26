@@ -34,7 +34,7 @@
             <div class="row">
                 <input type="hidden" name="retour" value="0">
                 <div class="col">
-                    <select name="ville" id="ville" class="inputCenter">
+                    <select name="ville" class="inputCenter">
                         <option value="-1" disabled selected>Ville de départ</option>
                         {#each villes as ville}
                             <option value={ville.id_ville}>{ville.nom}</option>
@@ -42,7 +42,7 @@
                     </select>
                 </div>
                 <div class="col">
-                    <select name="site" id="site" class="inputCenter">
+                    <select name="site" class="inputCenter">
                         <option value="-1" disabled selected>CNAM d'arrivé</option>
                         {#each sites as site}
                             <option value={site.id_site}>{site.nom}</option>
@@ -63,13 +63,26 @@
 
     <div class="row form-search">
         <h3 class="">Rechercher un trajet - CNAM -> Ville</h3>
-        <form>
+        <form method="POST" action={api + "/get_trajets.php"} on:submit={api_submit(() => {
+          window.history.pushState({}, '', '/trajet/resultTrajet');
+        })}>
             <div class="row">
+                <input type="hidden" name="retour" value="1">
                 <div class="col">
-                    <input type="text" placeholder="CNAM de départ" required>
+                    <select name="ville" class="inputCenter">
+                        <option value="-1" disabled selected>Ville d'arrivée</option>
+                        {#each villes as ville}
+                            <option value={ville.id_ville}>{ville.nom}</option>
+                        {/each}
+                    </select>
                 </div>
                 <div class="col">
-                    <input type="text" placeholder="Ville d'arrivée" required>
+                    <select name="site" id="site" class="inputCenter">
+                        <option value="-1" disabled selected>CNAM de départ</option>
+                        {#each sites as site}
+                            <option value={site.id_site}>{site.nom}</option>
+                        {/each}
+                    </select>
                 </div>
                 <div class="col">
                     <input type="date" placeholder="Date" required>
