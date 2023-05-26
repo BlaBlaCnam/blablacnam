@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <a href="/admin/tools/adminallmessages">
+    <a href="/messagerie/messagerie">
     <button class="btnpage" type="submit">Retour</button>
     </a>
 </div>

@@ -1,0 +1,548 @@
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.navbar-logo {
+    margin: 0px;
+    width: 3.5em;
+    height: auto;
+}
+
+nav.navbar {
+    background-color: #c10001 !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.color-band-admin {
+    background-color: rgb(103, 221, 103);
+}
+
+.btn-primary {
+    background-color: #c10001 !important;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative !important;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-content span {
+    font-weight: bold;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 2% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h2.login-heading {
+    text-align: center;
+    /* Vos styles spécifiques pour l'h2 de la section de connexion */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e04e3e;
+    color: #fff;
+}
+
+.register-link {
+    text-align: center;
+}
+
+.register-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2.register-heading {
+    text-align: center;
+    /* Vos styles spécifiques pour l'h2 de la section d'inscription */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.inputCenter {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-link {
+    text-align: center;
+}
+
+.inputpage {
+    margin: 30px;
+    display: block;
+    max-width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btnpage {
+    display: block;
+    width: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btnpage:hover {
+    background-color: #e04e3e;
+    color: #fff;
+}
+
+.bouton-user {
+    display: flex;
+    align-items: center;
+}
+
+.btnpage {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p,
+h1,
+h2,
+h3,
+.bouton-user {
+    margin: 30px;
+    max-height: fit-content;
+}
+
+.search-container {
+    max-width: 400px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.img-accueil {
+    max-width: 90%;
+    margin: 20px;
+    padding: 30px;
+}
+
+.password-container {
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.center-page {
+    width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+.form-search {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    border-color: #1b1e21;
+    box-shadow: 4px 4px 4px 4px rgba(157, 148, 148, 0.64);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.systeme-recherche {
+    width: 70% !important;
+    margin: auto;
+    display: flex;
+    margin-right: auto;
+    text-align: center;
+    gap: 5px;
+}
+
+.recherche-user {
+    width: auto;
+    height: 33px !important;
+}
+
+.bouton-recherche {
+    width: 50px;
+}
+
+.recherche-user {
+    width: 100% !important;
+    margin: auto;
+}
+
+.bouton-recherche {
+    width: 100px;
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dataTables_filter {
+    padding-left: 20px;
+}
+
+table thead {
+    color: #ffffff;
+    background-color: #c10001;
+}
+
+table tbody {
+    background-color: #FFFFFF;
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid #000000;
+}
+
+tr {
+    transition: 0.2s linear;
+}
+
+table tbody tr:hover {
+    color: #FFFFFF;
+    transition: 0.5s linear;
+    background-color: #c10001 !important;
+}
+
+table tbody tr:hover input[type=checkbox] {
+    transition: 0.5s linear;
+    accent-color: #FFFFFF;
+}
+
+table input[type=checkbox] {
+    accent-color: #c10001;
+    transition: 0.2s linear;
+}
+
+table tbody tr:hover a {
+    color: #FFFFFF;
+    transition: 0.5s linear;
+}
+
+table a {
+    color: #000;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+
+table tbody tr:hover a:hover {
+    color: #000;
+    transition: 0.5s linear;
+}
+
+.btnNewTrajet {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnNewTrajet:hover {
+    background-color: #e04e3e;
+    color: #fff;
+}
+
+.modifinfo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.info-container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.bouton-modifpassword {
+    display: flex;
+    margin-right: 10px;
+}
+
+.newtrajet-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+h2.newtrajet-heading {
+    text-align: center;
+    /* Vos styles spécifiques pour l'h2 de la section d'inscription */
+}
+
+.label-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label-input>label {
+    width: 80px;
+    margin-right: 10px;
+    text-align: left;
+    margin-left: auto;
+}
+
+.gestion-container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /*padding: 20px;*/
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.info-row {
+    margin-right: 50px !important;
+}
+
+.btn-message {
+    background-image: url("/message-icon-png-14932.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    display: block;
+    height: 32px;
+    width: 39px;
+    /*padding: -2px;*/
+    /*margin-bottom: -2px;*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.adminlist-container {
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.result-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+table img {
+    width: 25px;
+    height: 25px;
+}
+
+a img {
+    width: 30px;
+    height: 30px;
+}
+
+table,
+p {
+    text-align: center;
+    margin: auto;
+}
+
+.infotrajet-container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+h2.infotrajet-heading {
+    text-align: left;
+}
+
+.message {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #ffffff;
+    position: relative;
+}
+
+.message-header {
+    background-color: #c10001;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.message-title {
+    align-self: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message-date {
+    margin: 0;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.message-content {
+    margin-top: 10px;
+    color: #000;
+    min-height: 300px;
+}
+
+.message-auteur {
+    width: fit-content;
+    position: sticky;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.message-receveur {
+    width: fit-content;
+    position: sticky;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.vue-message {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 75%;
+    margin-bottom: 10px;
+    position: relative;
+}

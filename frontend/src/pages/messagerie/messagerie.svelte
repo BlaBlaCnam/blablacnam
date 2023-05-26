@@ -61,7 +61,7 @@
                 <td>{message.id_utilisateur_destinataire}</td>
                 <td>{message.contenu}</td>
                 <td>{message.date_message}</td>
-                <td><p><img src="/eye.png"></p></td>
+                <td><a href="/messagerie/message/{message.id_message}"><img src="/eye.png"></a></td>
             </tr>
         {/each}
 

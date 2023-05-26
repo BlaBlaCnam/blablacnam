@@ -60,12 +60,17 @@
                     <td>{user.email}</td>
                     <td>{parseInt(user.administrateur) ? "OUI" : "NON"}</td>
                     <td><a href="#" class="pomme" on:click={async function() {
+                        
                         await api_fetch(api + "/delete_user.php?id=" + user.id_utilisateur);
+                       
                         alert("Utilisateur supprimé avec succès!");
-                        table
+
+                        window.location.reload();
+
+                       /* table
                             .row(window['$'](this).parent().parent())
                             .remove();
-                        table.draw();
+                        table.draw();*/
                     }}><img src="/bin.png"></a></td>
                 </tr>
                 {/each}
