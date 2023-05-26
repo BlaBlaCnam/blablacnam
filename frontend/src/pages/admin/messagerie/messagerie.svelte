@@ -1,7 +1,7 @@
 <script>
     import { onDestroy, onMount } from "svelte";
-    import { api_fetch } from "../../function";
-    import { api } from "../../config";
+    import { api_fetch } from "../../../function";
+    import { api } from "../../../config";
     let table;
     let messagesUser = [];
 

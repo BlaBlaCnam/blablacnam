@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
-    import { api_submit } from "../../function";
-    import { api } from "../../config";
+    import { api_submit } from "../../../function";
+    import { api } from "../../../config";
 
     let users = [];
 
