@@ -1,7 +1,9 @@
 <script>
     import { onDestroy, onMount } from "svelte";
-
+    import { api_fetch } from "../../../function";
+    import { api } from "../../../config";
     let table;
+    let messages = [];
 
     onMount(() => {
          table = window['$']('#table_user').DataTable({
@@ -19,6 +21,13 @@
     onDestroy(() => {
         table.destroy();
     })
+
+
+    onMount(async () => {
+        messages = await api_fetch(api + "/get_all_message.php");
+
+    })
+
 </script>
 
 <div class="adminlist-container">
@@ -39,22 +48,25 @@
                 </tr>
             </thead>
             <tbody>
+            {#each messages as message}
                 <tr>
-                    <td>Smith</td>
-                    <td>John</td>
-                    <td>hello world</td>
-                    <td>20/10/2019</td>
+                    <td>{message.id_utilisateur_expediteur }</td>
+                    <td>{message.id_utilisateur_destinataire}</td>
+                    <td>{message.contenu}</td>
+                    <td>{message.date_message}</td>
                     <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
+                    <td><a href="#" class="pomme" on:click={async function() {
+                        await api_fetch(api + "/delete_message.php?id=" + message.id);
+                        alert("Message supprimé avec succès!");
+                        table
+                            .row(window['$'](this).parent().parent())
+                            .remove();
+                        table.draw();
+                    }}><img src="/bin.png"></a></td>
                 </tr>
-                <tr>
-                    <td>Doe</td>
-                    <td>Jane</td>
-                    <td>very useful message</td>
-                    <td>20/10/2019</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
+            {/each}
+
+
             </tbody>
         </table>
 </div>

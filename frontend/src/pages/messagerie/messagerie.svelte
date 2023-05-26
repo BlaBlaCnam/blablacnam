@@ -1,3 +1,38 @@
+<script>
+    import { onDestroy, onMount } from "svelte";
+    import { api_fetch } from "../../function";
+    import { api } from "../../config";
+    let table;
+    let messagesUser = [];
+
+
+    onMount(() => {
+        table = window['$']('#table_user').DataTable({
+            columns: [
+                null,
+                null,
+                null,
+                null,
+                {orderable: false},
+                {orderable: false},
+            ]
+        });
+    })
+
+    onDestroy(() => {
+        table.destroy();
+    })
+
+
+
+onMount(async () => {
+    messagesUser = await api_fetch(api + "/get_message_by_user.php");
+
+})
+
+</script>
+
+
 <div class="result-container">
 
     <a href="/user/infouser">
@@ -5,31 +40,28 @@
     </a>
     <h2 class="listeuser-body">Messagerie :</h2>
 
-    <table class="table-utilisateur">
+    <table class="table-utilisateur" id="table_user">
         <thead>
         <tr>
-            <th>N°ARA expediteur</th>
-            <th>N°ARA destinataire</th>
-            <th>Contenu du message</th>
+            <th>n°ARA expediteur</th>
+            <th>n°ARA receveur</th>
+            <th>Contenu</th>
             <th>Date du message</th>
             <th>Voir</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Smith</td>
-            <td>John</td>
-            <td>hello world</td>
-            <td>20/10/2019</td>
-            <td><p><img src="/eye.png"></p></td>
-        </tr>
-        <tr>
-            <td>Doe</td>
-            <td>Jane</td>
-            <td>ghscjkdsbnvjkndfklnvl dnnkce</td>
-            <td>20/10/2019</td>
-            <td><p><img src="/eye.png"></p></td>
-        </tr>
+        {#each messagesUser as message}
+            <tr>
+                <td>{message.id_utilisateur_expediteur }</td>
+                <td>{message.id_utilisateur_destinataire}</td>
+                <td>{message.contenu}</td>
+                <td>{message.date_message}</td>
+                <td><p><img src="/eye.png"></p></td>
+            </tr>
+        {/each}
+
+
         </tbody>
     </table>
 </div>

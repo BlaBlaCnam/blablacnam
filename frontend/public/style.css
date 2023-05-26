@@ -407,16 +407,15 @@ h2.newtrajet-heading {
     text-align: left;
 }
 
-.info-row{
+.info-row {
     margin-right: 50px !important;
-
 }
 
-.btn-message{
+.btn-message {
     background-image: url("/message-icon-png-14932.png");
-background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-background-size: 40px;
+    background-size: 40px;
     display: block;
     height: 32px;
     width: 39px;
@@ -425,8 +424,6 @@ background-size: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-
 
 .adminlist-container {
     max-width: fit-content;
@@ -469,7 +466,7 @@ p {
 }
 
 .infotrajet-container {
-    max-width: 900px;
+    width: 1500px;
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -484,50 +481,59 @@ h2.infotrajet-heading {
     text-align: left;
 }
 
-.message-user {
-    height: 5px;
-    width: auto;
+.message {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #ffffff;
+    position: relative;
 }
 
-.wave {
-    animation: wave calc(var(--speed, 0) * 1s) infinite linear;
-    background-image: url("https://assets.codepen.io/605876/wave--infinite.svg");
-    background-size: 50% 100%;
-    bottom: -5%;
-    height: calc(var(--height, 0) * 1vh);
-    left: 0;
-    opacity: var(--opacity);
+.message-header {
+    background-color: #c10001;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.message-title {
+    align-self: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message-date {
+    margin: 0;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.message-content {
+    margin-top: 10px;
+    color: #000;
+    min-height: 300px;
+}
+
+.message-auteur {
+    width: fit-content;
+    position: sticky;
     position: absolute;
+    bottom: 0;
     right: 0;
-    width: calc(var(--width, 0) * 1vw);
+    padding: 5px;
+    font-weight: bold;
 }
 
-@keyframes wave {
-    to {
-        transform: translate(-50%, 0);
-    }
-}
-
-.wave:nth-of-type(1) {
-    --height: 12;
-    --opacity: 0.3;
-    --speed: 30;
-    --width: 800;
-    color: #c100008f;
-}
-
-.wave:nth-of-type(2) {
-    --height: 12;
-    --opacity: 0.6;
-    --speed: 45;
-    --width: 800;
-    color: #c100008f;
-}
-
-.wave:nth-of-type(3) {
-    --height: 6;
-    --opacity: 1;
-    --speed: 15;
-    --width: 400;
-    color: #c100008f;
+.vue-message {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 75%;
+    margin-bottom: 10px;
+    position: relative;
+    >>>>>>>7ad03cfce9fc1dd55872a5580d68ad2bb7c43b41
 }
