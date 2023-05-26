@@ -2,7 +2,6 @@
 
 require_once ".config.php";
 
-
 global $db;
 
 $query = $db->prepare("select * from UTILISATEUR where id_utilisateur = ? and mot_de_passe = ?");

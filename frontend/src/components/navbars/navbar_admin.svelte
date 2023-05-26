@@ -1,6 +1,7 @@
 <script>
-  import {user} from "../../stores/user"
-
+    import { api_fetch } from "../../function";
+    import { api } from "../../config";
+    import { user } from "../../stores/user";
 </script>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
@@ -40,6 +41,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#" on:click={async () => {
                 await user.set(null);
+                await api_fetch(api + "/logout.php");
                 window.history.pushState({}, '', '/');
               }}>Déconnexion</a></li>
             </ul>

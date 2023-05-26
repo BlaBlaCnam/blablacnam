@@ -9,7 +9,7 @@ user.subscribe((e) => {
 
 export function set_cookie(cname, cvalue, cminutes = 24) {
     const d = new Date();
-    d.setTime(d.getTime() + (cminutes*60*60*1000));
+    d.setTime(d.getTime() + (cminutes*60*1000));
     let expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
@@ -61,6 +61,12 @@ export async function api_fetch(url, data = new FormData())
     let message = await res.text();
     try {
         let output = JSON.parse(message);
+        if (output.session_expired)
+        {
+            alert("La session à expiré, merci de vous reconnecter.");
+            window.history.pushState({}, '', "/");
+            return {};
+        }
         return output;
     }
     catch (ex) {
