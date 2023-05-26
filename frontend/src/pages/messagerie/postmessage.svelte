@@ -12,7 +12,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
+         
             <div class="row message-user mt-5 search-container">
+                <a href="/messagerie/messagerie">
+                    <button  id="refresh" class="btnpage" type="submit">Retour</button>
+                </a>
                 <h2>NOUVEAU MESSAGE</h2>
                 <form method="POST" action={api + "/post_message.php"} on:submit={api_submit(() => {
         window.history.pushState({}, '', '/messagerie/messagerie');
