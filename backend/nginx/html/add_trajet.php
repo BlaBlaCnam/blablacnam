@@ -7,18 +7,35 @@ $query = $db->prepare("INSERT INTO TRAJET (places, date_trajet, disponible, reto
                         VALUES
                         (?, ?, ?, ?)");
 
-var_dump(new DateTime($_POST["date"]));
-$query->execute([$_POST["places"], new DateTime('d/m/Y hh:mm',$_POST["date"]), 1, $_POST["retour"]]);
+$query->execute([$_POST["places"], date('d/m/Y H:i:s', strtotime($_POST["date"])), 1, $_POST["retour"]]);
 
 $lastTrajetID = $db->lastInsertId();
 
 $query = $db->prepare("INSERT INTO ARRET (id_trajet, id_ville, ordre)
                         VALUES
                         (?, ?, ?)");
-$query->execute([$lastTrajetID, $_POST["depart"], $_POST["1"]]);
-$query->execute([$lastTrajetID, $_POST["etape1"], $_POST["2"]]);
-$query->execute([$lastTrajetID, $_POST["etape2"], $_POST["3"]]);
-$query->execute([$lastTrajetID, $_POST["arrivee"], $_POST["4"]]);
+
+if ($_POST["depart"] == $_POST["arrivee"])
+{
+    
+}
+
+$query->execute([$lastTrajetID, $_POST["depart"], 1]);
+
+if (!empty($_POST["etape1"]))
+{
+    $query->execute([$lastTrajetID, $_POST["etape1"], 2]);
+
+    if (!empty($_POST["etape2"]))
+    {
+        $query->execute([$lastTrajetID, $_POST["etape2"], 3]);
+        $query->execute([$lastTrajetID, $_POST["arrivee"], 4]);
+    } else {
+        $query->execute([$lastTrajetID, $_POST["arrivee"], 3]);
+    }
+} else {
+    $query->execute([$lastTrajetID, $_POST["arrivee"], 2]);
+}
 
 $query = $db->prepare("INSERT INTO TRAJET_UTILISATEUR (id_trajet, id_utilisateur, conducteur)
                         VALUES
