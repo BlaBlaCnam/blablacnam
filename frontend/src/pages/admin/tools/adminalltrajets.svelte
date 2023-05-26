@@ -4,6 +4,7 @@
     let table;
 
     onMount(() => {
+
          table = window['$']('#table_user').DataTable({
             columns: [
                 null,
