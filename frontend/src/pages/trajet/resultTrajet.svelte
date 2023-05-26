@@ -1,3 +1,18 @@
+<script>
+    import { onMount } from "svelte";
+    import { api_fetch } from "../../function";
+    import { api } from "../../config";
+
+    let trajets = [];
+
+    onMount(async () => {
+        trajets = await api_fetch(api + "/get_trajets.php");
+        console.log(trajets)
+    })
+
+
+</script>
+
 <div class="result-container">
     <div class="row">
         <div class="col-md-8">
@@ -6,25 +21,25 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th>Date</th>
                     <th>Lieu de départ</th>
                     <th>Lieu d'arrivée</th>
-                    <th>Infos</th>
+                    <th>Date de départ</th>
+                    <th>Heure de départ</th>
+                    <th>Nombre de places libres</th>
+                    <th>Voir</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>01/05/2023</td>
-                    <td>Paris</td>
-                    <td>Lyon</td>
-                    <td><img src="/eye.png"></td>
-                </tr>
-                <tr>
-                    <td>05/05/2023</td>
-                    <td>Lyon</td>
-                    <td>Marseille</td>
-                    <td><img src="/eye.png"></td>
-                </tr>
+                {#each trajets as trajet}
+                    <tr>
+                        <td>{trajet.depart}</td>
+                        <td>{trajet.arrivee}</td>
+                        <td>{new Date(trajet.date_trajet).toLocaleDateString()}</td>
+                        <td>{new Date(trajet.date_trajet).toLocaleTimeString()}</td>
+                        <td>{trajet.nb_places_libres}</td>
+                        <td><img src="/eye.png"></td>
+                    </tr>
+                {/each}
                 <!-- ... et ainsi de suite pour chaque trajet -->
                 </tbody>
             </table>
