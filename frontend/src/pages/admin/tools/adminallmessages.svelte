@@ -5,17 +5,21 @@
     let table;
     let messages = [];
 
-    onMount(() => {
-         table = window['$']('#table_user').DataTable({
-            columns: [
-                null,
-                null,
-                null,
-                null,
-                {orderable: false},
-                {orderable: false},
-            ]
-         });
+    onMount(async () => {
+        messages = await api_fetch(api + "/get_all_message.php");
+        setTimeout(() => {
+            table = window['$']('#table_user').DataTable({
+                columns: [
+                    null,
+                    null,
+                    null,
+                    null,
+                    {orderable: false},
+                    {orderable: false},
+                ]
+            });
+        }, 0)
+
     })
 
     onDestroy(() => {
@@ -23,10 +27,6 @@
     })
 
 
-    onMount(async () => {
-        messages = await api_fetch(api + "/get_all_message.php");
-
-    })
 
 </script>
 
