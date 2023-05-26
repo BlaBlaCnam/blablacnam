@@ -1,8 +1,20 @@
 <script>
     import {metatags} from '@roxi/routify'
+    import { onMount } from "svelte";
+    import { api_submit } from "../function";
+    import { api } from "../config";
 
     metatags.title = 'My Routify app'
     metatags.description = 'Description coming soon...'
+
+    let villes = [];
+    let sites = [];
+
+    onMount(async () => {
+        villes = await api_fetch(api + "/get_villes.php");
+        sites = await api_fetch(api + "/get_sites.php");
+
+    })
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <main class="container">
@@ -16,20 +28,32 @@
     <div class="row form-search">
         <h3 class="">Rechercher un trajet - Ville -> CNAM</h3>
 
-        <form>
+        <form method="POST" action={api + "/get_trajets.php"} on:submit={api_submit(() => {
+          window.history.pushState({}, '', '/trajet/resultTrajet');
+        })}>
             <div class="row">
+                <input type="hidden" name="retour" value="0">
                 <div class="col">
-                    <input type="text" placeholder="Ville de départ" required>
+                    <select name="ville" id="ville" class="inputCenter">
+                        <option value="-1" disabled selected>Ville de départ</option>
+                        {#each villes as ville}
+                            <option value={ville.id_ville}>{ville.nom}</option>
+                        {/each}
+                    </select>
                 </div>
                 <div class="col">
-                    <input type="text" placeholder="CNAM d'arrivé" required>
+                    <select name="site" id="site" class="inputCenter">
+                        <option value="-1" disabled selected>CNAM d'arrivé</option>
+                        {#each sites as site}
+                            <option value={site.id_site}>{site.nom}</option>
+                        {/each}
+                    </select>
                 </div>
                 <div class="col">
                     <input type="date" placeholder="Date" required>
                 </div>
                 <div class="col">
                     <button type="submit">Rechercher</button>
-
                 </div>
             </div>
 
