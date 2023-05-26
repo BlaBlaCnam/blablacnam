@@ -18,7 +18,7 @@
       </ul>
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item dropdown">
-          <a class="nav-link active" href="#">Mes trajets</a>
+          <a class="nav-link active" href="/trajet/mesTrajets">Mes trajets</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">

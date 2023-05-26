@@ -5,17 +5,21 @@
     let table;
     let messages = [];
 
-    onMount(() => {
-         table = window['$']('#table_user').DataTable({
-            columns: [
-                null,
-                null,
-                null,
-                null,
-                {orderable: false},
-                {orderable: false},
-            ]
-         });
+    onMount(async () => {
+        messages = await api_fetch(api + "/get_all_message.php");
+        setTimeout(() => {
+            table = window['$']('#table_user').DataTable({
+                columns: [
+                    null,
+                    null,
+                    null,
+                    null,
+                    {orderable: false},
+                    {orderable: false},
+                ]
+            });
+        }, 0)
+
     })
 
     onDestroy(() => {
@@ -23,10 +27,6 @@
     })
 
 
-    onMount(async () => {
-        messages = await api_fetch(api + "/get_all_message.php");
-
-    })
 
 </script>
 
@@ -56,12 +56,16 @@
                     <td>{message.date_message}</td>
                     <td><p><img src="/eye.png"></p></td>
                     <td><a href="#" class="pomme" on:click={async function() {
-                        await api_fetch(api + "/delete_message.php?id=" + message.id);
-                        alert("Message supprimé avec succès!");
+
                         table
                             .row(window['$'](this).parent().parent())
                             .remove();
                         table.draw();
+
+                        await api_fetch(api + "/delete_message.php?id=" + message.id_message);
+
+                        alert("Message supprimé avec succès!");
+
                     }}><img src="/bin.png"></a></td>
                 </tr>
             {/each}

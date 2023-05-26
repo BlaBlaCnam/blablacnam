@@ -19,7 +19,7 @@
         window.history.pushState({}, '', '/');
 
       })}>
-      <input name="user" type="text" placeholder="Nom d'utilisateur" required>
+      <input name="user" type="text" placeholder="Numéro ARA" required>
       <input name="pw" type="password" placeholder="Mot de passe" required>
       <button type="submit">Se connecter</button>
     </form>

@@ -1,16 +1,66 @@
-<<<<<<< Updated upstream
+<script>
+    import { onDestroy, onMount } from "svelte";
+    import { api_fetch } from "../../function";
+    import { api } from "../../config";
+    import { user } from "../../stores/user";
+    let tablemessages;
+    let messages = [];
+    let sections = [];
+    let users = [];
+    let trajets = [];
 
-<script>
-    import {user} from "./../../stores/user"
-  </script>
-=======
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
-<script>
-    import {user} from "./../../stores/user"
+    onMount(async () => {
+        
+        //listuser
+        users = await api_fetch(api + "/get_users.php");
+        //??
+        window['$']('#table_user').DataTable({
+            columns: [
+                null,
+                null,
+                null,
+                {orderable: false},
+                {orderable: false},
+            ]
+         });
+         //list messages
+        messages = (await api_fetch(api + "/get_all_message.php")).slice(0,4);
+
+        setTimeout(() => {
+            tablemessages = window['$']('#table_user').DataTable({
+                columns: [
+                    null,
+                    null,
+                    null,
+                    null,
+                ]
+            });
+        }, 0)
+        //list sections
+        sections =  (await api_fetch(api + "/get_sections.php")).slice(0,4);
+
+        setTimeout(() => {
+            tablesections = window['$']('#table_section').DataTable();
+        }, 200)
+        //list trajets
+        tabletrajets = window['$']('#table_user').DataTable({
+            columns: [
+                null,
+                null,
+                {orderable: false},
+                {orderable: false},
+            ]
+         });
+
+
+    })
+
+    onDestroy(() => {
+        tablemessages.destroy();
+    })
 </script>
-<div class="test-container"></div>
->>>>>>> Stashed changes
-  <div class="row test-container">
+
+<!--infouserconnected-->
     <div class="row">
       <div class="col-md-6">
         <div class="info-container">
@@ -47,18 +97,17 @@
         </div>
       </div>
     </div>
-</div>
 
 
 
-    <!--tables-->
+<!--infouser-->
 <div class="row">
     <div class="col adminlist-container">
         <div class="col">
             <h2>Liste des utilisateurs :</h2>
         </div>
         <div class="col">
-            <a href="/admin/tools/adminallusers">
+            <a href="/admin/listeuser">
                 <img src="/add.png" />
               </a>
               
@@ -76,43 +125,20 @@
                     <th>Nom</th>
                     <th>Prénom</th>
                     <th>Email</th>
-                    <th>Voir</th>
-                    <th>Supprimer</th>
                 </tr>
             </thead>
             <tbody>
+            {#each users as user}
                 <tr>
-                    <td>Smith</td>
-                    <td>John</td>
-                    <td>john.smith@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
+                    <td>{user.nom}</td>
+                    <td>{user.prenom}</td>
+                    <td>{user.email}</td>
                 </tr>
-                <tr>
-                    <td>Doe</td>
-                    <td>Jane</td>
-                    <td>jane.doe@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
-                <tr>
-                    <td>Thomas</td>
-                    <td>Nathan</td>
-                    <td>NathanThomasAnalDestroyers@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
-                <tr>
-                    <td>caca</td>
-                    <td>Nathan</td>
-                    <td>NathanThomasAnalDestroyer@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
+            {/each}
             </tbody>
         </table>
     </div>
-        <!--table2-->
+        <!--infotablemessages-->
     <div class="col adminlist-container">
         <div class="col">
             <h2>Liste des messages :</h2>
@@ -129,53 +155,34 @@
         <table class="table-utilisateur">
             <thead>
                 <tr>
-                    <th>Nom</th>
-                    <th>Prénom</th>
-                    <th>Email</th>
-                    <th>Voir</th>
-                    <th>Supprimer</th>
+                    <th>n°ARA expediteur</th>
+                    <th>n°ARA receveur</th>
+                    <th>Contenu</th>
+                    <th>Date du message</th>
                 </tr>
             </thead>
             <tbody>
+                <!--ajouter 4 derniers messages-->
+                {#each messages as message}
                 <tr>
-                    <td>Smith</td>
-                    <td>John</td>
-                    <td>john.smith@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
+                    <td>{message.id_utilisateur_expediteur }</td>
+                    <td>{message.id_utilisateur_destinataire}</td>
+                    <td>{message.contenu}</td>
+                    <td>{message.date_message}</td>
                 </tr>
-                <tr>                        
-                    <td>Doe</td>
-                    <td>Jane</td>
-                    <td>jane.doe@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
-                <tr>
-                    <td>Thomas</td>
-                    <td>Nathan</td>
-                    <td>NathanThomasAnalDestroyers@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
-                <tr>
-                    <td>caca</td>
-                    <td>Nathan</td>
-                    <td>NathanThomasAnalDestroyer@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
+            {/each}
             </tbody>
         </table>
     </div>
-</div> 
+</div>
 <div class="row">
+    <!--infotablesections-->
     <div class="col adminlist-container">
         <div class="col">
-            <h2>Liste des utilisateurs :</h2>
+            <h2>Liste des sections :</h2>
         </div>
         <div class="col">
-            <a href="/admin/tools/adminallusers">
+            <a href="/admin/tools/adminallsections">
                 <img src="/add.png" />
               </a>
               
@@ -184,58 +191,31 @@
     
         <form class="systeme-recherche" action="/recherche" method="get">
             <input class="recherche-user" type="text" name="q" placeholder="Recherche">
-            <button class="btnpage" type="submit">Rechercher</button>
+            <button class="btnpage" type="submit">sites</button>
         </form>
 
         <table class="table-utilisateur">
             <thead>
                 <tr>
-                    <th>Nom</th>
-                    <th>Prénom</th>
-                    <th>Email</th>
-                    <th>Voir</th>
-                    <th>Supprimer</th>
+                    <th>Nom de section</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Smith</td>
-                    <td>John</td>
-                    <td>john.smith@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
-                <tr>
-                    <td>Doe</td>
-                    <td>Jane</td>
-                    <td>jane.doe@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
-                <tr>
-                    <td>Thomas</td>
-                    <td>Nathan</td>
-                    <td>NathanThomasAnalDestroyers@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
-                <tr>
-                    <td>caca</td>
-                    <td>Nathan</td>
-                    <td>NathanThomasAnalDestroyer@example.com</td>
-                    <td><p><img src="/eye.png"></p></td>
-                    <td><p><img src="/bin.png"></p></td>
-                </tr>
+                {#each sections as section}
+            <tr>
+                <td>{section.nom}</td>
+            </tr>
+            {/each}
             </tbody>
         </table>
     </div>
-        <!--table2-->
+        <!--tabletrajets-->
     <div class="col adminlist-container">
         <div class="col">
-            <h2>Liste des messages :</h2>
+            <h2>Liste des trajets :</h2>
         </div>
         <div class="col">
-            <a href="/admin/tools/adminallmessages">
+            <a href="/admin/tools/adminalltrajets">
                 <img src="/add.png" />
             </a>
         </div>

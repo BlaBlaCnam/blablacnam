@@ -15,26 +15,26 @@
       <thead>
         <tr>
           <th>Date</th>
-          <th>Lieu de départ</th>
-          <th>Lieu d'arrivée</th>
+          <th>Départ</th>
+          <th>Arrivée</th>
           <th>Details</th>
           <th>Supprimer</th>
         </tr>
       </thead>
       <tbody>
-      
         <tr>
           <td>01/05/2023</td>
           <td>Paris</td>
           <td>Lyon</td>
-          <td><p><img src="/eye.png"></p></td>
+          <td><p><a href="/trajet/infotrajet"><img src="/eye.png"></a></p></td>
           <td><p><img src="/bin.png"></p></td>
         </tr>
+        
         <tr>
           <td>05/05/2023</td>
           <td>Lyon</td>
           <td>Marseille</td>
-          <td><p><img src="/eye.png"></p></td>
+          <td><p><a href="/trajet/infotrajet"><img src="/eye.png"></a></p></td>
           <td><p><img src="/bin.png"></p></td>
         </tr>
      

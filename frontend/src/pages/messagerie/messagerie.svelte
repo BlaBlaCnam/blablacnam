@@ -26,9 +26,22 @@
 
 <div class="result-container">
 
-    <a href="/user/infouser">
-        <button  id="refresh" class="btnpage" type="submit">Retour</button>
-    </a>
+    <div class="row">
+        <div class="rol md-4">
+            <a href="/user/infouser">
+                <button  id="refresh" class="btnpage" type="submit">Retour</button>
+            </a>
+        </div>
+       
+        <div class="rol md-4">
+            <a href="/messagerie/postmessage">
+                <button  id="refresh" class="btnpage" type="submit">Nouveau Message</button>
+            </a>
+        </div>
+
+        
+    </div>
+  
     <h2 class="listeuser-body">Messagerie :</h2>
 
     <table class="table-utilisateur" id="table_user">

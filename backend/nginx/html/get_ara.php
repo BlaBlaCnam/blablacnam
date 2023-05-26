@@ -6,7 +6,7 @@ require_session(1);
 
 global $db;
 
-$query = $db->prepare("select * from NUMERO_ARA");
+$query = $db->prepare("select * from NUMERO_ARA order by id_ara desc;");
 $query->execute();
 
 echo json_encode($query->fetchAll());
