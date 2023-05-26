@@ -1,5 +1,5 @@
 <script>
-    import { api_fetch } from "../../function";
+    import { api_fetch, set_cookie } from "../../function";
     import { api } from "../../config";
     import { user } from "../../stores/user";
 </script>
@@ -38,6 +38,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#" on:click={async () => {
                 await user.set(null);
+                set_cookie("PHPSESSID", null);
                 await api_fetch(api + "/logout.php");
                 window.history.pushState({}, '', '/');
               }}>Déconnexion</a></li>

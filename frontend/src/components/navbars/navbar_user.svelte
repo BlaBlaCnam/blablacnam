@@ -21,17 +21,20 @@
           <a class="nav-link active" href="/trajet/mesTrajets">Mes trajets</a>
         </li>
       </ul>
-      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li>
-          <a class="dropdown-toggle nav-link active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{$user.nom}</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown band-admin">
+          <a class="dropdown-toggle nav-link active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{$user.prenom}</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#" on:click={async () => {
               await user.set(null);
+              set_cookie("PHPSESSID", null);
               await api_fetch(api + "/logout.php");
               window.history.pushState({}, '', '/');
-            }}>Déconnexion</a>
-            </li>
+            }}>Déconnexion</a></li>
           </ul>
+        </li>
+        <li class="nav-item band-admin">
+          <a class="nav-link active color-band-admin" href="#">utilisateur</a>
         </li>
       </ul>
     </div>

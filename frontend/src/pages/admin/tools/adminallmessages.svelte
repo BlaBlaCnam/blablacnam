@@ -54,17 +54,19 @@
                     <td>{message.id_utilisateur_destinataire}</td>
                     <td>{message.contenu}</td>
                     <td>{message.date_message}</td>
-                    <td><p><img src="/eye.png"></p></td>
+                    <td><a href="/messagerie/message/{message.id_message}"><img src="/eye.png"></a></td>
                     <td><a href="#" class="pomme" on:click={async function() {
 
                         table
                             .row(window['$'](this).parent().parent())
                             .remove();
-                        table.draw();
 
                         await api_fetch(api + "/delete_message.php?id=" + message.id_message);
 
-                        alert("Message supprimé avec succès!");
+                        alert("Message supprimé avec succès!");        
+                        
+                        table.draw();
+
 
                     }}><img src="/bin.png"></a></td>
                 </tr>
