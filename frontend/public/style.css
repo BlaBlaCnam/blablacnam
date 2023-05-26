@@ -528,6 +528,16 @@ h2.infotrajet-heading {
     font-weight: bold;
 }
 
+.message-receveur {
+    width: fit-content;
+    position: sticky;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    font-weight: bold;
+}
+
 .vue-message {
     margin-left: auto;
     margin-right: auto;
@@ -535,5 +545,4 @@ h2.infotrajet-heading {
     width: 75%;
     margin-bottom: 10px;
     position: relative;
-    >>>>>>>7ad03cfce9fc1dd55872a5580d68ad2bb7c43b41
 }
