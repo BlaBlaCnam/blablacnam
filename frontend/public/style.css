@@ -407,16 +407,15 @@ h2.newtrajet-heading {
     text-align: left;
 }
 
-.info-row{
+.info-row {
     margin-right: 50px !important;
-
 }
 
-.btn-message{
+.btn-message {
     background-image: url("/message-icon-png-14932.png");
-background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-background-size: 40px;
+    background-size: 40px;
     display: block;
     height: 32px;
     width: 39px;
@@ -425,8 +424,6 @@ background-size: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-
 
 .adminlist-container {
     max-width: fit-content;
@@ -494,27 +491,27 @@ h2.infotrajet-heading {
     color: #ffffff;
     position: relative;
 }
-  
+
 .message-header {
-    background-color: #c10001 ;
+    background-color: #c10001;
     padding: 5px;
     text-align: center;
     width: 100%;
-  }
-  
+}
+
 .message-title {
     align-self: auto;
     margin-left: auto;
     margin-right: auto;
 }
-  
+
 .message-date {
     margin: 0;
     font-size: 12px;
     color: #ffffff;
     padding: 10px;
 }
-  
+
 .message-content {
     margin-top: 10px;
     color: #000;
@@ -538,5 +535,5 @@ h2.infotrajet-heading {
     width: 75%;
     margin-bottom: 10px;
     position: relative;
->>>>>>> Stashed changes
+    >>>>>>>7ad03cfce9fc1dd55872a5580d68ad2bb7c43b41
 }

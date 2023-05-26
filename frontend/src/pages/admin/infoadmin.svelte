@@ -1,7 +1,15 @@
+<<<<<<< Updated upstream
 
 <script>
     import {user} from "./../../stores/user"
   </script>
+=======
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+<script>
+    import {user} from "./../../stores/user"
+</script>
+<div class="test-container"></div>
+>>>>>>> Stashed changes
   <div class="row test-container">
     <div class="row">
       <div class="col-md-6">
@@ -31,31 +39,27 @@
               </div>
             </div>
           </div>
-          
         </div>
         <div class="row">
           <div>
             <img class="img-accueil" src="/voiturerouge.jpg" alt="">
-  
           </div>
-  
         </div>
-  
       </div>
     </div>
-    </div>
+</div>
 
 
 
     <!--tables-->
-  <div class="row">
+<div class="row">
     <div class="col adminlist-container">
         <div class="col">
             <h2>Liste des utilisateurs :</h2>
         </div>
         <div class="col">
             <a href="/admin/tools/adminallusers">
-                <img src="/add.png" >
+                <img src="/add.png" />
               </a>
               
         </div>
@@ -115,7 +119,7 @@
         </div>
         <div class="col">
             <a href="/admin/tools/adminallmessages">
-                <img src="/add.png" >
+                <img src="/add.png" />
             </a>
         </div>
         <form class="systeme-recherche" action="/recherche" method="get">
@@ -172,7 +176,7 @@
         </div>
         <div class="col">
             <a href="/admin/tools/adminallusers">
-                <img src="/add.png" >
+                <img src="/add.png" />
               </a>
               
         </div>
@@ -232,7 +236,7 @@
         </div>
         <div class="col">
             <a href="/admin/tools/adminallmessages">
-                <img src="/add.png" >
+                <img src="/add.png" />
             </a>
         </div>
         <form class="systeme-recherche" action="/recherche" method="get">
@@ -281,7 +285,7 @@
             </tbody>
         </table>
     </div>
-</div> 
+</div>
   
   
   
