@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
 <script>
     import { onDestroy, onMount } from "svelte";
     import { api_fetch } from "../../function";
