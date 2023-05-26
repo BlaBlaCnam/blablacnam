@@ -6,37 +6,28 @@
     let messagesUser = [];
 
 
-    onMount(() => {
-        table = window['$']('#table_user').DataTable({
-            columns: [
-                null,
-                null,
-                null,
-                null,
-                {orderable: false},
-                {orderable: false},
-            ]
-        });
+    onMount(async () => {
+        messagesUser = await api_fetch(api + "/get_message_by_user.php");
+        setTimeout(() => {
+            table = window['$']('#table_user').DataTable({
+                columns: [
+                    null,
+                    null,
+                    null,
+                    null,
+                    {orderable: false},
+                    {orderable: false},
+                ]
+            });
+        }, 0)
     })
-
-    onDestroy(() => {
-        table.destroy();
-    })
-
-
-
-onMount(async () => {
-    messagesUser = await api_fetch(api + "/get_message_by_user.php");
-
-})
-
 </script>
 
 
 <div class="result-container">
 
     <a href="/user/infouser">
-        <button class="btnpage" type="submit">Retour</button>
+        <button  id="refresh" class="btnpage" type="submit">Retour</button>
     </a>
     <h2 class="listeuser-body">Messagerie :</h2>
 
