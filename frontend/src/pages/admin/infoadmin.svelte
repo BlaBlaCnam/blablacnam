@@ -1,25 +1,8 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
 <script>
-    import { onMount } from "svelte";
-import {user} from "./../../stores/user"
-import { onDestroy, onMount } from "svelte";
-    import { api } from "../../../config";
-    import { api_fetch } from "../../../function";
-
-    let sites = [];
-    let table;
-
-    onMount(async () => {
-        sites =  await api_fetch(api + "/get_sites.php");
-
-        setTimeout(() => {
-            table = window['$']('#table_site').DataTable();
-        }, 200)
-    })
-
-    onDestroy(() => {
-        table.destroy();
-    })
-  </script>
+    import {user} from "./../../stores/user"
+</script>
+<div class="test-container"></div>
   <div class="row test-container">
     <div class="row">
       <div class="col-md-6">
@@ -58,8 +41,6 @@ import { onDestroy, onMount } from "svelte";
       </div>
     </div>
 </div>
-
-
 
     <!--tables-->
 <div class="row">
