@@ -1,5 +1,9 @@
 <?php
 
+ini_set('session.gc_maxlifetime', 3600 * 24 * 30);
+
+session_set_cookie_params(3600 * 24 * 30);
+
 try 
 {
     $db = new PDO("sqlsrv:Server=172.16.100.110;Database=BLABLACNAM", "sa" , "d70PMWhgdzq8NAùùl73,;:jdqzo");
