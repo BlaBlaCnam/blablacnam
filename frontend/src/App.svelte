@@ -16,7 +16,7 @@
   import animatedbackground from "./components/animations/animatedbackground.svelte";
   onMount(async () => {
     let sessid = get_cookie("PHPSESSID");
-    if (sessid)
+    if (sessid && sessid != 'undefined')
     {
       let userData = await api_fetch(api + "/try_session.php?PHPSESSID=" + sessid);
       if (userData)
