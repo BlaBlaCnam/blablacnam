@@ -58,13 +58,15 @@ function require_session($admin = 0)
 {
     if (!isset($_SESSION["is_logged_in"]) || !$_SESSION["is_logged_in"])
     {
-        echo "Vous devez être connecté pour continuer!";  
+        session_destroy();
+        echo json_encode(["session_expired" => true]);
         exit;
     }
 
     if ($_SESSION["user"]["administrateur"] != $admin)
     {
-        echo "Vous n'avez pas les bon droits!";
+        session_destroy();
+        echo json_encode(["session_expired" => true]);
         exit;
     }
 }
