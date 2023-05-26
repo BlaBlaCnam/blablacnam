@@ -8,7 +8,7 @@
   })
 </script>
 
-<div class="login-container">
+<div class="login-container wave">
     <img src="/BLABLACNAM.png" alt="Logo" class="logo">
     <h2 class="login-heading">Connexion</h2>
     <form action="{api}/login.php" on:submit={api_submit(async (data) => {

@@ -13,6 +13,7 @@
   import { api_fetch, get_cookie } from "./function";
   import { api } from "./config";
 
+  import animatedbackground from "./components/animations/animatedbackground.svelte";
   onMount(async () => {
     let sessid = get_cookie("PHPSESSID");
     if (sessid)
@@ -26,7 +27,7 @@
   })
 
 </script>
-
+<animatedbackground />
 {#if $user && parseInt($user.administrateur)}
   <NavBarAdmin />
 {:else if $user}
